@@ -1,0 +1,52 @@
+.vertical-line {
+    border-right: 1px solid #ccc;
+    height: 100%;
+    margin: 0 1rem;
+}
+
+.links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.links li {
+    list-style-type: none;
+    margin-bottom: 0.5rem;
+}
+
+.links li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.icon {
+    margin-right: 0.5rem;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+}
+
+.profile .image {
+    margin-right: 1rem;
+}
+
+.title {
+    text-align: left;
+}
+
+.subtitle {
+    text-align: left;
+}
