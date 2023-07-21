@@ -4,15 +4,6 @@
     src: url('Poppins-Medium.otf') format('opentype');
   }
 
-@keyframes movingBackground {
-    0% {
-        background-position: 0 0;
-    }
-    100% {
-        background-position: 100% 0;
-    }
-}
-
 
 body {
     /*background: linear-gradient(45deg, #2c3e50, #1e272e);*/
@@ -25,10 +16,10 @@ body {
     padding: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    min-height: 100vh;
+    /*min-height: 100vh;*/
     align-items: center;
     justify-content: center;
-    animation: movingBackground 1000s linear infinite;
+    overflow-x: hidden;
 }
 
 .container {
