@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@700&display=swap');
+
 @font-face {
     font-family: 'Poppins-Medium';
     src: url('Poppins-Medium.otf') format('opentype');
-  }
-
+}
 
 body {
-    /*background: linear-gradient(45deg, #2c3e50, #1e272e);*/
     background-image: url('pexels-marek-piwnicki-12638474.jpg');
     background-size: cover;
     background-position: center;
@@ -14,33 +13,31 @@ body {
     color: white;
     margin: 0;
     padding: 0;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-attachment: fixed;
-    /*min-height: 100vh;*/
+    min-height: 100vh;
     align-items: center;
     justify-content: center;
     overflow-x: hidden;
 }
 
 .container {
-    background-color: white; /* Set the desired background color */
+    background-color: white;
     position: relative;
     z-index: 1;
-  }
+}
 
 header {
     display: flex;
     flex-direction: column;
-    /*align-items: center; /* Center the content horizontally */
-    justify-content: center; /* Center the content vertically */
-    height: 100vh; /* Adjust the height to your preference */
+    justify-content: center;
+    height: 100vh;
 }
 
 .name {
     font-size: 2.5rem;
-    /*font-weight: bold;*/
     text-transform: lowercase;
-    margin-left: 10rem; /* Add margin to move it down */
+    margin-left: 10rem;
     letter-spacing: 0.2rem;
 }
 
@@ -65,7 +62,7 @@ header {
 }
 
 main {
-    flex: 1; /* Let the main section grow and fill the available vertical space */
+    flex: 1;
 }
 
 .icon {
