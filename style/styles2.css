@@ -28,7 +28,7 @@ body {
     min-height: 100vh;
     align-items: center;
     justify-content: center;
-    animation: movingBackground 100s linear infinite;
+    animation: movingBackground 1000s linear infinite;
 }
 
 .container {
