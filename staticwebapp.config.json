@@ -6,11 +6,6 @@
         "statusCode": 200
       },
       {
-        "route": "resume.blakeniebrugge.com",
-        "serve": "/assets/resume.pdf",
-        "statusCode": 307
-      },
-      {
         "route": "/:path*",
         "serve": "/index.html",
         "statusCode": 200
