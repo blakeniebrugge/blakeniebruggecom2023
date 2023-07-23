@@ -1,0 +1,432 @@
+/* Main Styles */
+
+/* Smooth Scrolling enabled*/
+html {
+    scroll-behavior: smooth;
+}
+
+/* Font and spacing adjustments for name/title/company */
+.name {
+    font-size: 2.5rem; /* Change the size to your preference */
+    font-weight: bold;
+}
+  
+
+/* Puts profile picture ad Name/Title/Company side by side while on desktop */
+@media (min-width: 601px) {
+    .container {
+        flex-direction: row; /* Arrange elements side by side */
+    }
+
+    .profile-picture-container {
+        margin-right: 2rem; /* Add some space between the profile picture and name/title/company */
+    }
+}
+
+/* Profile Picture */
+.profile-picture-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+/* Background */
+.resume-section {
+    padding: 20px;
+    background-image: url("assets/pexels-marek-piwnicki-12638474.jpg");
+    background-size: cover;
+    background-position: center center; 
+    background-repeat: no-repeat; 
+}
+
+/* Indenting for titles under Illinois Wesleyan University */
+.indent-title {
+    margin-left: 1.5rem;
+}
+
+/* Line with basic info and contact details */
+.basic-info {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/* Links in basic info line */
+.basic-info a {
+    color: rgb(77, 77, 77);
+}
+
+/* Education list styles */
+.education-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.education-list li {
+    margin-bottom: 8px; /* Add more spacing between list items */
+    display: flex; /* Use flexbox for horizontal alignment */
+    align-items: center; /* Center the items vertically */
+    font-size: small;
+}
+
+.education-list li i {
+    margin-right: 10px; /* Add spacing between the icon and text */
+}
+
+/* Additional styles for the education section */
+.column p.is-italic {
+    font-style: italic;
+}
+
+.column i.has-text-grey {
+    color: grey;
+    font-size: 0.9rem;
+}
+
+/* CSS for the certifications section */
+.certifications-section {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items (including the title) to the left */
+    position: relative;
+}
+
+/* Certification card wrapper */
+.certification-cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center items horizontally */
+}
+
+/* CSS for each certification card */
+.certification-card {
+    max-width: 200px;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    margin-right: 15px;
+    position: relative;
+    border: 1px solid #ccc;
+}
+
+
+/* CSS for the certification card image */
+.certification-card img {
+    max-width: 100%;
+    display: block;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* CSS for the certification title */
+.certification-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/* CSS for the certification description */
+.certification-description {
+    font-size: 0.9rem;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/* Overlay Properties */
+.certification-card.in-progress {
+    opacity: 0.6; /* Set the opacity to 60% (0.6) to make it appear greyed out */
+    pointer-events: none; /* Disable pointer events on the card so it cannot be interacted with */
+}
+
+/* Grey overlay pseudo-element for in-progress cards */
+.certification-card.in-progress::before {
+    content: ""; /* Empty content to create the pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px; /* Adjust the border-radius to match the certification card */
+    background-color: rgba(0, 0, 0, 0.6); /* Adjust the opacity value (0.6) for the desired grey overlay effect */
+    z-index: 1; /* Make sure the overlay is behind the content */
+}
+
+/* Text overlay for in-progress cards */
+.certification-card.in-progress::after {
+    content: "In Progress";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+    z-index: 2;
+    white-space: nowrap; /* Display "In Progress" on one line */
+}
+
+/* Grey overlay for planned cards */
+.certification-card.planned {
+    opacity: 0.6; /* Set the opacity to 60% (0.6) to make it appear greyed out */
+    pointer-events: none; /* Disable pointer events on the card so it cannot be interacted with */
+}
+
+/* Text overlay for planned cards */
+.certification-card.planned::after {
+    content: "Planned";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+    z-index: 2;
+    white-space: nowrap; /* Display "Planned" on one line */
+}
+
+/* Grey overlay pseudo-element for planned cards */
+.certification-card.planned::before {
+    content: ""; /* Empty content to create the pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px; /* Adjust the border-radius to match the certification card */
+    background-color: rgba(0, 0, 0, 0.6); /* Adjust the opacity value (0.6) for the desired grey overlay effect */
+    z-index: 1; /* Make sure the overlay is behind the content */
+}
+
+/* CSS for the "full" About Me content */
+.full-content {
+    display: none; /* Initially hide the full content */
+}
+
+/* Style for the "Read More" link */
+#read-more-link {
+    color: #007BFF; /* Customize the link color */
+    cursor: pointer;
+    display: block;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: right;
+}
+
+#read-more-link.collapsed::after {
+    content: "Read More"; /* Display "Read More" when the section is collapsed */
+}
+
+#read-more-link.expanded::after {
+    content: "Read Less"; /* Display "Read Less" when the section is expanded */
+}
+
+.read-more-link-container,
+.read-less-link-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px; /* Adjust this margin as needed */
+}
+
+/* CSS for the experience section */
+.experience-section {
+    margin-top: 20px;
+}
+  
+/* Timeline styles */
+.timeline {
+    position: relative;
+}
+
+.timeline-line {
+    position: absolute;
+    top: 0;
+    left: -1px; /* Adjust the left position to align the timeline on the left side */
+    width: 2px;
+    height: 100%;
+    background-color: #ccc; /* Adjust the color of the timeline line */
+}
+
+.timeline-line::before,
+.timeline-line::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 35px;
+}
+
+.timeline-line::before {
+    top: -35px;
+    background: linear-gradient(to bottom, transparent, #ccc);
+}
+
+.timeline-line::after {
+    bottom: -35px;
+    background: linear-gradient(to top, transparent, #ccc);
+}
+
+.year {
+    position: absolute;
+    top: -20px; /* Adjust the top position to move the years above the timeline */
+    left: -14px;
+    font-size: 0.8rem;
+    text-align: center; /* Center the text horizontally */
+    width: 30px; /* Set a fixed width to ensure enough space for the years */
+}
+
+.year::after {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #ccc; /* Adjust the color of the year markers */
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%); /* Center the dots horizontally */
+}
+
+.year:first-child::after {
+    border: 2px dotted #ccc; /* Add dotted styling to the top end of the timeline */
+}
+
+.year:last-child::after {
+    border: 2px dotted #ccc; /* Add dotted styling to the bottom end of the timeline */
+}
+
+/* Styling for each experience card */
+.experience-card {
+    position: relative;
+    padding-left: 40px; /* Add some spacing to the left of the card content to accommodate the timeline */
+    margin-bottom: 20px; /* Add some spacing between each experience card */
+}
+
+.experience-card::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -8px; /* Adjust the left position to center the dots on the timeline */
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    box-shadow: 0 0 4px rgba(255, 166, 0, 0.2); /* Add a subtle shadow to the circle */
+}
+
+.experience-card:nth-child(2)::before {
+    background-color: #2a5e00; /* For alternating colors, change the background color for even numbered experience cards */
+}
+.experience-card:nth-child(3)::before {
+    background-color: #f79f1c; /* For alternating colors, change the background color for even numbered experience cards */
+}
+.experience-card:nth-child(4)::before {
+    background-color: #c50101; /* For alternating colors, change the background color for even numbered experience cards */
+}
+
+/* Styling for dates and locations in Experience */
+.experience-card .dates {
+    font-size: 0.8rem;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.experience-card .location {
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+
+/* CSS for the skills section */
+.skills-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* CSS for each skills card */
+.skills-card {
+    margin-bottom: 20px;
+}
+
+/* CSS for the skills list */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* CSS for each skill card */
+.skill-card {
+    flex-basis: calc(33.33% - 20px);
+    max-width: 200px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex; /* Use flexbox to center the text */
+    flex-direction: column; /* Stack the text vertically */
+    justify-content: center; /* Center the text vertically */
+    align-items: center; /* Center the text horizontally */
+}
+
+/* CSS for the skill title */
+.skill-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+/* CSS for the skill description */
+.skill-description {
+    font-size: 0.9rem;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/* CSS for the portfolio section */
+.portfolio-section {
+    margin-top: 20px;
+}
+
+.project-cards-wrapper {
+    display: grid; /* Use CSS Grid for layout */
+    grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+    grid-gap: 20px; /* Add some spacing between the project cards */
+}
+
+/* Styling for project cards */
+.project-card {
+    max-width: 100%; 
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+}
+
+.project-card h5 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.project-description {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.project-link {
+    display: inline-block;
+    background-color: #007bff; /* Adjust the color as needed */
+    color: white;
+    padding: 8px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: #0056b3; /* Adjust the hover color as needed */
+}
+
+

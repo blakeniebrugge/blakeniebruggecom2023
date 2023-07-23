@@ -1,8 +1,367 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<!-- https://tinyurl.com/ynfmjuc5 -->
+
 <head>
+    <!-- Meta tags and title -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <link rel="icon" type="image/png" href="assets/favicon-16x16.png">
+    <!-- Stylesheets (Including Bulma via thier CDN)-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="style/resume.css">
+    <link rel="stylesheet" href="style/mobile.css">
 </head>
+
 <body>
-    <h1>Under Construction...</h1>
+    <!-- Background Container -->
+    <div class="resume-section" style="background-image: url('assets/pexels-marek-piwnicki-12638474.jpg'); background-attachment: fixed;">
+        <!-- Profile Card -->
+        <div class="card has-background-white-ter">
+            <div class="card-content">
+                <!-- Profile picture and name/title/company -->
+                <div class="container is-flex is-justify-content-center is-align-items-center">
+                    <!-- Profile picture -->
+                    <div class="profile-picture-container">
+                        <img src="assets/KC1_050523_5332_20.jpeg" alt="Profile Picture" class="profile-picture">
+                    </div>
+                    <!-- Name, title, company -->
+                    <div class="has-text">
+                        <h1 class="name is-size-3 has-text-weight-bold">Blake Niebrugge</h1>
+                        <h2 class="title mb-1">IT Cloud Analyst</h2>
+                        <h3 class="company">COUNTRY Financial®</h3>
+                    </div>
+                </div>
+                <!-- Line with basic info and contact details -->
+                <div class="container is-flex is-justify-content-center is-align-items-center has-text-centered mt-4">
+                    <p style="font-size: 0.9rem; font-weight: bold;">
+                        Bloomington, IL &bull; 217.663.2619 &bull; <a href="mailto:blake@blakeniebrugge.com" style="color: rgb(77, 77, 77);">blake@blakeniebrugge.com</a> &bull; <a href="https://blakeniebrugge.com" target="_blank" style="color: rgb(77, 77, 77);">blakeniebrugge.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!-- About me -->
+        <div class="about-me card">
+            <div class="card has-background-white-ter">
+                <div class="card-content expandable-content">
+                    <h4 class="is-size-4 has-text-weight-bold">About Me</h4>
+                    <br>
+                    <!-- About Me Content (Preview) -->
+                    <div class="short-content">
+                        <p>
+                            Hi, I'm Blake, currently working as an IT Cloud Analyst at COUNTRY Financial®, where I am part of the
+                            Future Technology Leadership Rotation. I am a recent graduate with a strong passion for the IT industry and a
+                            drive to continuously learn and improve.
+                        </p>
+                        <div class="read-more-link-container">
+                            <a id="read-more-link" class="read-more-link">Read More</a>
+                        </div>
+                    </div>
+                    <!-- About Me Content (Full) -->
+                    <div class="full-content">
+                        <p>
+                            Hi, I'm Blake, currently working as an IT Cloud Analyst at COUNTRY Financial®, where I am part of the
+                            Future Technology Leadership Rotation. I am a recent graduate with a strong passion for the IT industry and a
+                            drive to continuously learn and improve.
+                        </p>
+                        <br>
+                        <p>
+                            My journey into the world of IT began with my current role at COUNTRY Financial®, which has allowed me to gain
+                            valuable experience in cloud computing (specifically Azure). Alongside my work, I've had the opportunity to
+                            explore various aspects of Information Security through an internship and further develop my skills in
+                            Software Development during my computer science degree at Illinois Wesleyan.
+                        </p>
+                        <br>
+                        <p>
+                            The ever-evolving nature of the IT field excites me, and I find great fulfillment in staying on top of of the
+                            latest technologies and best practices. The intricacies of IT, from infrastructure to security, have captured
+                            my curiosity and fueled my enthusiasm for driving innovation and efficiency across various industries.
+                        </p>
+                        <br>
+                        <p>
+                            Beyond my professional endeavors, I have a strong interest in sports, particularly baseball. Having played
+                            the sport and now exploring umpiring, I appreciate all the benefits that it and sports offer. Recently,
+                            I've also taken up golfing, enjoying the challenge and relaxation it provides. Additionally, building this
+                            website from scratch has been a rewarding experience that showcases my creativity and passion for coding.
+                        </p>
+                        <br>
+                        <p>
+                            As I continue to grow in my career, I'm committed to expanding my technical expertise through certifications
+                            and hands-on experience. My aspiration is to eventually take on a managerial role, leading teams and
+                            contributing to projects that have a positive impact on the organization and the people it serves.
+                        </p>
+                        <br>
+                        <p>
+                            If you share a passion for IT, technology, or simply want to chat about baseball or golf, feel free
+                            to reach out. Let's connect!
+                        </p>
+                        <br>
+                        <p>- Blake</p>
+                        <div class="read-less-link-container">
+                            <a id="read-less-link" class="read-more-link">Read Less</a>
+                        </div>
+                    </div>     
+                </div>
+            </div>
+        </div>
+        <br>
+        <!-- Education Card -->
+        <div class="card has-background-white-ter">
+            <div class="card-content">
+                <div class="columns">
+                    <!-- IWU -->
+                    <div class="column">
+                        <h4 class="is-size-4 has-text-weight-bold">Illinois Wesleyan University</h4>
+                        <i class="has-text-grey">Bloomington, IL | 2019-2023</i>
+                        <p class="is-italic">Bachelor's of Science, Computer Science</p>
+                        <ul class="education-list">
+                            <li class="mb-0 activites"><i class="fa-solid fa-baseball ml-2 mr-2"></i> NCAA Baseball - 4 years</li>
+                            <li class="mb-0"><i class="fas fa-users ml-2 mr-1"></i>Theta Chi Fraternity - 4 years</li>
+                            <li class="indent-title mb-0"><i class="fas fa-user mr-2"></i> President</li>
+                            <li class="indent-title mb-0"><i class="fas fa-home mr-1"></i> House Manager</li>
+                            <li class="indent-title"><i class="fas fa-clipboard mr-2"></i> Chair of Alumni Relations</li>
+                            <li class="mb-0"><i class="fas fa-users ml-2 mr-1"></i> Interfraternity Council - 1 year</li>
+                            <li class="indent-title"><i class="fas fa-chart-line mr-1"></i> VP Finance & Communication</li>
+                        </ul>
+                    </div>
+                    <!-- STA -->
+                    <div class="column">
+                        <h4 class="is-size-4 has-text-weight-bold">St. Anthony High School</h4>
+                        <i class="has-text-grey">Effingham, IL | 2015-2019</i>
+                        <p class="is-italic">High School Diploma</p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- Experience timeline -->
+        <div class="experience-section card">
+            <div class="card-content">
+                <h4 class="is-size-4 has-text-weight-bold mb-6">Experience</h4>
+                <div class="timeline mt-4">
+                    <div class="timeline-line"></div>
+                    <!-- CF -->
+                    <div class="experience-card mb-6">
+                        <h5 class="is-size-5 has-text-weight-semibold">IT Cloud Analyst</h5>
+                        <p class="company">COUNTRY Financial®</p>
+                        <p class="dates mb-0">June 2023 - Current</p>
+                        <p class="location">Bloomington, IL</p>
+                        <p class="description mt-4">
+                            Working extensively with the architecture of our Azure environment and contributing to the migration of applications from on-premises systems to Azure.
+                        </p>
+                    </div>
+                    <!-- MSBI -->
+                    <div class="experience-card mb-6">  
+                        <h5 class="is-size-5 has-text-weight-semibold">Information Security Intern</h5>
+                        <p class="company">Midland States Bank</p>
+                        <p class="dates mb-0">June 2022 - December 2022</p>
+                        <p class="location">Effingham, IL</p>
+                        <p class="description mt-4">
+                            Exposed to and practiced all aspects of Information Security, including compliance (SOX), vulnerability management, event response, SOC Reviews, and more. I utilized various tools for Vulnerability Management, Intrusion/Managed Detection and Response, Phishing Testing, Asset Management, and more. Additionally, I took part in implementing a new vendor for a password repository service and gained exposure to the discovery and vetting phases of vendor management.
+                        </p>
+                    </div>
+                    <!-- JCCI -->
+                    <div class="experience-card mb-6">
+                        <h5 class="is-size-5 has-text-weight-semibold">Summer Help</h5>
+                        <p class="company">Jansen Cable Construction, Inc.</p>
+                        <p class="dates mb-0">Summers, 2017-2021</p>
+                        <p class="location">Effingham, IL</p>
+                        <p class="description mt-4">
+                            Worked as a general laborer and also as a splicer for all types of cables, including Coax, Copper, and Fiber Optics.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!-- Certifications -->
+        <div class="certifications-section card">
+            <div class="card-content">
+                <h4 class="is-size-4 has-text-weight-bold mb-4">Certifications</h4>
+                <div class="certification-cards-wrapper">
+                    <!-- AZ-900 -->
+                    <div class="certification-card in-progress">
+                        <img src="assets/63188c97fbd0a646ced923da_microsoft-azure-fundamentals-official-training-certification.png" alt="Microsoft Azure Fundamentals Certification">
+                        <div class="certification-details">
+                            <p class="certification-title">AZ-900</p>
+                            <p class="certification-description">Microsoft Azure Fundamentals</p>
+                        </div>
+                    </div>
+                    <!-- AZ-104 -->
+                    <div class="certification-card planned">
+                        <img src="assets/azure-administrator-associate.png" alt="Microsoft Azure Administrator Associate (AZ-104)"> <!-- Replace "path/to/az-104-logo.png" with the actual path to the image -->
+                        <div class="certification-details">
+                            <p class="certification-title">AZ-104</p>
+                            <p class="certification-description">Microsoft Azure Administrator Associate</p> <!-- Update the description to include "Planned" -->
+                        </div>
+                    </div>
+                    <!-- Add more certification cards here as needed -->
+                </div>
+            </div>
+        </div>        
+        <br>
+        <!-- Skills -->
+        <div class="skills-section card">
+            <div class="card-content">
+                <h4 class="is-size-4 has-text-weight-bold">Skills</h4>
+                <!-- Technical Skills -->
+                <div class="technical-skills skills-card">
+                    <h5 class="is-size-5 has-text-weight-semibold mb-3 mt-3">Technical Skills</h5>
+                    <div class="skills-list">
+                        <div class="skill-card">
+                            <p class="skill-title">OOP coding</p>
+                            <p class="skill-description">Python</p>
+                            <p class="skill-description">Java</p>
+                            <p class="skill-description">C++</p>
+                        </div>
+                        <div class="skill-card">
+                            <p class="skill-title">Web Development Coding</p>
+                            <p class="skill-description">HTML</p>
+                            <p class="skill-description">CSS</p>
+                            <p class="skill-description">Javascript</p>
+                        </div>
+                        <div class="skill-card">
+                            <p class="skill-title">Microsoft 365</p>
+                            <p class="skill-description">Excel</p>
+                            <p class="skill-description">Word</p>
+                            <p class="skill-description">Outlook & Outlook Admin</p>
+                            <p class="skill-description">Powerpoint</p>
+                        </div>
+                        <div class="skill-card">
+                            <p class="skill-title">Microsoft Azure</p>
+                            <p class="skill-description">CLI/Automation</p>
+                            <p class="skill-description">Web Apps</p>
+                            <p class="skill-description">Defender</p>
+                            <p class="skill-description">AD/Entra</p>
+                        </div>
+                        <div class="skill-card">
+                            <p class="skill-title">Netwrix</p>
+                        </div>
+                        <div class="skill-card">
+                            <p class="skill-title">Rapid7 SIEM</p>
+                            <p class="skill-description">IDR</p>
+                            <p class="skill-description">Vulnerability Management</p>
+                        </div>
+                        <div class="skill-card">
+                            <p class="skill-title">SOX reviews</p>
+                        </div>
+                        <div class="skill-card">
+                            <p class="skill-title">Flask Framework</p>
+                        </div>
+                        <div class="skill-card">
+                            <p class="skill-title">Styling Frameworks</p>
+                            <p class="skill-description">Bulma</p>
+                            <p class="skill-description">Bootstrap</p>
+                        </div>
+                        <div class="skill-card">
+                            <p class="skill-title">Database Querying</p>
+                            <p class="skill-description">SQL</p>
+                            <p class="skill-description">KQL (Azure)</p>
+                        </div>
+                        <div class="skill-card">
+                            <p class="skill-title">Git Version Control</p>
+                            <p class="skill-description">Github</p>
+                            <p class="skill-description">Gitlab</p>
+                        </div>
+                        <div class="skill-card">
+                            <p class="skill-title">Scrum Methodology</p>
+                        </div>
+                        <!-- Add more technical skill cards here as needed -->
+                    </div>
+                </div>
+        
+                <!-- Soft Skills -->
+                <div class="soft-skills skills-card">
+                    <h5 class="is-size-5 has-text-weight-semibold mb-3">Soft Skills</h5>
+                    <div class="skills-list">
+                        <div class="skill-card">
+                            <p class="skill-title">Time Management</p>
+                        </div>
+                        <div class="skill-card">
+                            <p class="skill-title">Communication</p>
+                        </div>
+                        <div class="skill-card">
+                            <p class="skill-title">Organization</p>
+                        </div>
+                        <div class="skill-card">
+                            <p class="skill-title">Teamwork</p>
+                        </div>
+                        <div class="skill-card">
+                            <p class="skill-title">Adaptibility</p>
+                        </div>
+                        <div class="skill-card">
+                            <p class="skill-title">Problem-Solving</p>
+                        </div>
+                        <div class="skill-card">
+                            <p class="skill-title">Critical Thinking</p>
+                        </div>
+                        <div class="skill-card">
+                            <p class="skill-title">Attention to Detail</p>
+                        </div>
+                        <!-- Add more soft skill cards here as needed -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!-- Projects/Portfolio -->
+        <div class="portfolio-section card">
+            <div class="card-content">
+                <h4 class="is-size-4 has-text-weight-bold mb-5">Portfolio</h4>
+                <div class="project-cards-wrapper">
+                    <!-- Website -->
+                    <div class="project-card">
+                        <h5 class="is-size-5 has-text-weight-semibold">This Website</h5>
+                        <p class="project-description mb-5">
+                            blakeniebrugge.com serves as my personal portfolio, showcasing my skills, projects, and experiences in the field of
+                            IT and technology. It is built using HTML, CSS, and JavaScript, with responsive design for various devices.
+                            It is also 100% hosted on Microsoft Azure using Static Web Apps and CI/CD runners from GitHub.
+                        </p>
+                        <a href="https://github.com/blakeniebrugge/blakeniebruggecom2023/" class="project-link mb-3">View Source Code</a>
+                        <a href="mailto:blake@blakeniebrugge.com" class="project-link">Make a Suggestion!</a>
+                    </div>
+                    <!-- DL Project -->
+                    <div class="project-card">
+                        <h5 class="is-size-5 has-text-weight-semibold">Deep Learning MLB Team Classifier</h5>
+                        <i>CS 387: Deep Learning @ Illinois Wesleyan</i>
+                        <br>
+                        <p class="project-description mt-2">
+                            Developed a PyTorch-based neural network to identify MLB players' teams based on profile pictures, achieving near 90% testing accuracy. 
+                            Scraped nearly 1,200 images from team websites for training. Includes a user-friendly interface for uploading images and testing the model.
+                        </p>
+                        <a href="https://colab.research.google.com/drive/1bA9Khc5fXruW86U0W3wdGG1g3isl3OO9?usp=sharing" class="project-link">View Project</a>
+                    </div>
+                    <!-- Add more project cards here as needed -->
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
 </body>
+
+<!-- JS Script for expanding About Me section-->
+<script>
+    const readMoreLink = document.getElementById('read-more-link');
+    const readLessLink = document.getElementById('read-less-link');
+    const shortContent = document.querySelector('.short-content');
+    const fullContent = document.querySelector('.full-content');
+
+    readMoreLink.addEventListener('click', () => {
+    shortContent.style.display = 'none';
+    fullContent.style.display = 'block';
+    });
+
+    readLessLink.addEventListener('click', () => {
+    shortContent.style.display = 'block';
+    fullContent.style.display = 'none';
+    });
+</script>
+
+<!-- FontAwesome Icons -->
+<script src="https://kit.fontawesome.com/1591ae28e9.js"></script>
+
 </html>

@@ -1,0 +1,37 @@
+/* Mobile Styles (up to 600px) */
+@media only screen and (max-width: 600px) {
+    
+    /* Profile Container */
+    .container {
+        flex-direction: column;
+    }
+
+    .profile-picture-container {
+        margin-bottom: 1rem; /* Add some space between the profile picture and name/title/company */
+    }
+    
+    /* Name, Title, Company */
+    .has-text {
+        text-align: center; /* Center the text within the container */
+        margin-top: 10px; /* Add a little space between the profile picture and the text */
+    }
+
+    /* Skills section */
+    .technical-skills .skills-list,
+    .soft-skills .skills-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Display two cards per row on mobile */
+        gap: 1rem; /* Add some gap between the cards for better spacing */
+    }
+  
+    /* Portfolio section */
+    .portfolio-section .project-cards-wrapper {
+      display: block;
+    }
+  
+    .portfolio-section .project-card {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+}
+  

@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@700&display=swap');
-
+/* Font from FontSquirrel */
 @font-face {
     font-family: 'Poppins-Medium';
     src: url('Poppins-Medium.otf') format('opentype');
 }
 
+/* Global styling for the entire body */
 body {
     background-image: url('pexels-marek-piwnicki-12638474.jpg');
     background-size: cover;
@@ -21,12 +21,14 @@ body {
     overflow-x: hidden;
 }
 
+/* Container styling */
 .container {
     background-color: white;
     position: relative;
     z-index: 1;
 }
 
+/* Header styling */
 header {
     display: flex;
     flex-direction: column;
@@ -34,6 +36,7 @@ header {
     height: 100vh;
 }
 
+/* Styling for the name */
 .name {
     font-size: 2.5rem;
     text-transform: lowercase;
@@ -41,30 +44,35 @@ header {
     letter-spacing: 0.2rem;
 }
 
+/* Styling for the icons */
 .icons {
     list-style-type: none;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding: 0;
-    margin-top: -1rem;
+    margin-top: -0.5rem;
     margin-left: 10rem;
 }
 
+/* Styling for each individual icon */
 .icons li {
     margin-right: 1rem;
 }
 
+/* Styling for icon links */
 .icons li a {
     color: white;
     font-size: 1.75rem;
     padding: 0.1rem;
 }
 
+/* Main content section styling */
 main {
     flex: 1;
 }
 
+/* Styling for the icons themselves */
 .icon {
     width: 40px;
     height: 40px;
