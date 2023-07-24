@@ -1,7 +1,7 @@
 /* Font from FontSquirrel */
 @font-face {
-    font-family: 'Poppins-Medium';
-    src: url('Poppins-Medium.otf') format('opentype');
+    font-family: 'Cera GR';
+    src: url('Cera\ GR\ Bold.ttf') format('opentype');
 }
 
 /* Global styling for the entire body */
@@ -9,7 +9,7 @@ body {
     background-image: url('pexels-marek-piwnicki-12638474.jpg');
     background-size: cover;
     background-position: left;
-    font-family: 'Poppins-Medium', Arial, sans-serif;
+    font-family: 'Cera GR';
     color: white;
     margin: 0;
     padding: 0;
@@ -38,8 +38,8 @@ header {
 
 /* Styling for the name */
 .name {
-    font-size: 2.5rem;
-    text-transform: lowercase;
+    font-size: 3rem;
+    text-transform: uppercase;
     margin-left: 10rem;
     letter-spacing: 0.2rem;
 }
@@ -51,7 +51,7 @@ header {
     justify-content: flex-start;
     align-items: center;
     padding: 0;
-    margin-top: -0.5rem;
+    margin-top: -0rem;
     margin-left: 10rem;
 }
 
@@ -78,3 +78,15 @@ main {
     height: 40px;
 }
 
+/* Styling for the resume button */
+.resume-button {
+    display: flex;
+    justify-content: left;
+    margin-left: 9.4rem;
+    margin-top: -0.5rem;
+}
+
+/* Styling for the resume button image */
+.resume-button img {
+    width: 130px; /* Adjust the width as needed to match the icon size */
+}

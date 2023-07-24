@@ -2,13 +2,13 @@
 
 /* change the font for the name */ 
 @font-face {
-    font-family: 'Poppins-Regular';
-    src: url('Poppins-Regular.otf') format('opentype');
+    font-family: 'Cera GR';
+    src: url('Cera\ GR\ Bold.ttf') format('opentype');
 }
 
 /*use the new font*/
 body {
-    font-family: 'Poppins-Regular';
+    font-family: 'Cera GR';
 }
 
 /*name styling*/
@@ -25,9 +25,16 @@ header {
 /*icon spacing*/
 .icons {
     margin-left: 30px;
+    margin-top: 0.5rem;
 }
 
 /*icon sizing*/
 .icons li a {
     font-size: 1.5rem;
+}
+
+.resume-button {
+    margin-left: 24px;
+    margin-top: 0rem;
+    width: 90px;
 }
