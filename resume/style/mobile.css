@@ -23,13 +23,21 @@
         justify-content: center; /* Center items horizontally */
     }
 
+    .certification-card {
+        width: 100%;
+        border-radius: 8px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+        position: relative;
+        border: 1px solid #ccc;
+    }
+
     /* CSS for each certification card */
     .certification-card {
-        max-width: 275px;
+        max-width: 100%;
         padding: 20px;
         border-radius: 8px;
         margin-bottom: 20px;
-        margin-right: 15px;
         position: relative;
         border: 1px solid #ccc;
     }
@@ -38,7 +46,7 @@
     .technical-skills .skills-list,
     .soft-skills .skills-list {
         display: grid;
-        max-width: 275px;
+        max-width: 100%;
         grid-template-columns: repeat(2, 1fr); /* Display two cards per row on mobile */
         gap: 0.5rem; /* Add some gap between the cards for better spacing */
     }

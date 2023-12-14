@@ -319,12 +319,15 @@ html {
 }
 
 .experience-card:nth-child(2)::before {
-    background-color: #2a5e00; /* For alternating colors, change the background color for even numbered experience cards */
+    background-color: #eb6f09; /* For alternating colors, change the background color for even numbered experience cards */
 }
 .experience-card:nth-child(3)::before {
-    background-color: #f79f1c; /* For alternating colors, change the background color for even numbered experience cards */
+    background-color: #2a5e00; /* For alternating colors, change the background color for even numbered experience cards */
 }
 .experience-card:nth-child(4)::before {
+    background-color: #eb6f09; /* For alternating colors, change the background color for even numbered experience cards */
+}
+.experience-card:nth-child(5)::before {
     background-color: #c50101; /* For alternating colors, change the background color for even numbered experience cards */
 }
 
@@ -363,7 +366,7 @@ html {
 /* CSS for each skill card */
 .skill-card {
     flex-basis: calc(33.33% - 20px);
-    max-width: 200px;
+    width: 100%;
     padding: 15px;
     border: 1px solid #ccc;
     border-radius: 8px;

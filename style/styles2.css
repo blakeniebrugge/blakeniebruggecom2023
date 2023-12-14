@@ -1,7 +1,8 @@
 /* Font from FontSquirrel */
 @font-face {
     font-family: 'Cera GR';
-    src: url('Cera\ GR\ Bold.ttf') format('opentype');
+    src: url("Poppins-Medium.otf");
+    /*src: url('Cera\ GR\ Bold.ttf') format('opentype');*/
 }
 
 /* Global styling for the entire body */
@@ -39,9 +40,8 @@ header {
 /* Styling for the name */
 .name {
     font-size: 3rem;
-    text-transform: uppercase;
     margin-left: 10rem;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.15rem;
 }
 
 /* Styling for the icons */
@@ -58,6 +58,7 @@ header {
 /* Styling for each individual icon */
 .icons li {
     margin-right: 1rem;
+    padding-bottom: 9px;
 }
 
 /* Styling for icon links */
