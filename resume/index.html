@@ -7,400 +7,296 @@
     <!-- Meta tags and title -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
+    <title>Blake Niebrugge - Resume</title>
     <link rel="icon" type="image/png" href="assets/favicon-16x16.png">
     <!-- Stylesheets (Including Bulma via thier CDN)-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="style/resume.css">
-    <link rel="stylesheet" href="style/mobile.css">
 </head>
 
 <body>
-    <!-- Background Container -->
-    <div class="resume-section" style="background-image: url('assets/pexels-marek-piwnicki-12638474.jpg'); background-attachment: fixed;">
-        <!-- Profile Card -->
-        <div class="card has-background-white-ter">
-            <div class="card-content">
-                <!-- Profile picture and name/title/company -->
-                <div class="container is-flex is-justify-content-center is-align-items-center">
-                    <!-- Profile picture -->
-                    <div class="profile-picture-container">
-                        <img src="assets/headshot.jpeg" alt="Profile Picture" class="profile-picture">
-                    </div>
-                    <!-- Name, title, company -->
-                    <div class="has-text">
-                        <h1 class="name is-size-3 has-text-weight-bold">Blake Niebrugge</h1>
-                        <h2 class="title is-size-5 mb-1">InfoSec Analyst</h2>
-                        <h3 class="company is-size-7">Midland States Bank</h3>
-                    </div>
-                </div>
-                <!-- Line with basic info and contact details -->
-                <div class="container is-flex is-justify-content-center is-align-items-center has-text-centered mt-4">
-                    <p style="font-size: 0.9rem; font-weight: bold;">
-                        Effingham, IL &bull; <a href="mailto:blake@blakeniebrugge.com" style="color: rgb(77, 77, 77);">blake@blakeniebrugge.com</a> &bull; <a href="https://blakeniebrugge.com" target="_blank" style="color: rgb(77, 77, 77);">blakeniebrugge.com</a>
-                    </p>
-                </div>
+    <a href="https://blakeniebrugge.com" class="back-home">← HOME</a>
+
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <img src="assets/headshot.jpeg" alt="Blake Niebrugge" class="profile-pic">
+            <h1>Blake Niebrugge</h1>
+            <div class="title">InfoSec Analyst</div>
+            <div class="company">Midland States Bank</div>
+            <div class="contact-info">
+                <span>Effingham, IL</span>
+                <a href="mailto:blake@blakeniebrugge.com">blake@blakeniebrugge.com</a>
+                <a href="https://blakeniebrugge.com">blakeniebrugge.com</a>
             </div>
         </div>
-        <br>
-        <!-- About me -->
-        <div class="about-me card">
-            <div class="card has-background-white-ter">
-                <div class="card-content expandable-content">
-                    <h4 class="is-size-4 has-text-weight-bold">About Me</h4>
-                    <br>
-                    <!-- About Me Content (Preview) -->
-                    <div class="short-content">
-                        <p>
-                            Hi, I'm Blake, currently working as an Information Security Analyst for Midland States Bank.
-                            I am a graduate of Illinois Wesleyan University, where I played baseball and earned a Bachelor's of Science
-                            in Computer Science. I have also had other experiences in cloud platforms and infrastructure, and hold multiple certifications.
-                        </p>
-                        <div class="read-more-link-container">
-                            <a id="read-more-link" class="read-more-link">Read More</a>
-                        </div>
-                    </div>
-                    <!-- About Me Content (Full) -->
-                    <div class="full-content">
-                        <p>
-                            Hi, I'm Blake, currently working as an Information Security Analyst for Midland States Bank.
-                            I am a graduate of Illinois Wesleyan University, where I played baseball and earned a Bachelor's of Science
-                            in Computer Science. I have also had other experiences in cloud platforms and infrastructure, and hold multiple certifications.
-                        </p>
-                        <br>
-                        <p>
-                            My journey into the world of IT began with an internship on Midland State Bank's Information Security team, where I was introduced to the world
-                            of Information/Cyber Security. After that, I had a brief tenure with COUNTRY Financial® in Bloomington, Illinois after college, where I was
-                            introduced to the world of cloud computing and services with Azure. I then returned to the Midland team full-time as a Security Analyst.
-                        </p>
-                        <br>
-                        <p>
-                            The ever-evolving nature of the IT field excites me, and I find great fulfillment in staying on top of of the
-                            latest technologies and best practices. The intricacies of IT, from infrastructure to security, have captured
-                            my curiosity and fueled my enthusiasm for driving innovation and efficiency across various industries.
-                        </p>
-                        <br>
-                        <p>
-                            Beyond my professional endeavors, I have a strong interest in sports, particularly baseball and football. Recently,
-                            I've also taken up golfing, but we are a long way from being good enough to brag about it. Additionally, building this
-                            website from scratch has been a rewarding experience that showcases my creativity and passion for coding.
-                        </p>
-                        <br>
-                        <p>
-                            As I continue to grow in my career, I'm committed to expanding my technical expertise through certifications
-                            and hands-on experience. My aspiration is to eventually take on a managerial role, leading teams and
-                            contributing to projects that have a positive impact on the organization and the people it serves.
-                        </p>
-                        <br>
-                        <p>
-                            If you share a passion for technology, or simply want to chat about baseball or golf, feel free
-                            to reach out. Let's connect!
-                        </p>
-                        <br>
-                        <p>- Blake</p>
-                        <div class="read-less-link-container">
-                            <a id="read-less-link" class="read-more-link">Read Less</a>
-                        </div>
-                    </div>     
+
+        <!-- About -->
+        <section class="section">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="short-content">
+                    <p>I’m an IT professional with a focus on cyber & information security. I’ve also spent time working with infrastructure, cloud platforms, and a bit of development/scripting - mostly Python and PowerShell. I enjoy leading investigations, solving problems, automating tasks, and learning new tools that make systems run smoother or make them more secure.</p>
+                    <span class="read-more" id="read-more">Read More →</span>
+                </div>
+                <div class="full-content" id="full-content">
+                    <p>I’m an IT professional with a focus on cyber & information security. I’ve also spent time working with infrastructure, cloud platforms, and a bit of development/scripting - mostly Python and PowerShell. I enjoy leading investigations, solving problems, automating tasks, and learning new tools that make systems run smoother or make them more secure.</p>
+                    <p>The ever-evolving nature of the IT field excites me, and I find great fulfillment in staying on top of the latest technologies and best practices. The intricacies of IT, from infrastructure to security, have captured my curiosity and fueled my enthusiasm for driving innovation and efficiency across various industries.</p>
+                    <p>Beyond my professional endeavors, I have a strong interest in sports, particularly in hockey, baseball, and football. Recently, I've also taken up golfing, but we are a long way from being good enough to brag about it. Additionally, building this website from scratch has been a rewarding experience that showcases my creativity and passion for coding.</p>
+                    <p>As I continue to grow in my career, I'm committed to expanding my technical expertise through certifications and hands-on experience.</p>
+                    <p>If any of this resonates with you. Let's connect!</p>
+                    <p>- Blake</p>
+                    <span class="read-more" id="read-less">Read Less ←</span>
                 </div>
             </div>
-        </div>
-        <br>
-        <!-- Education Card -->
-        <div class="card has-background-white-ter">
-            <div class="card-content">
-                <div class="columns">
-                    <!-- IWU -->
-                    <div class="column">
-                        <h4 class="is-size-5 has-text-weight-bold">Illinois Wesleyan University</h4>
-                        <i class="has-text-grey">Bloomington, IL | 2019-2023</i>
-                        <p class="is-italic">Bachelor's of Science, Computer Science</p>
-                        <ul class="education-list">
-                            <li class="mb-0 activites"><i class="fa-solid fa-baseball ml-2 mr-2"></i> NCAA Baseball - 4 years</li>
-                            <li class="mb-0"><i class="fas fa-users ml-2 mr-1"></i>Theta Chi Fraternity - 4 years</li>
-                            <li class="indent-title mb-0"><i class="fas fa-user mr-2"></i> President</li>
-                            <li class="indent-title mb-0"><i class="fas fa-home mr-1"></i> House Manager</li>
-                            <li class="indent-title"><i class="fas fa-clipboard mr-2"></i> Chair of Alumni Relations</li>
-                            <li class="mb-0"><i class="fas fa-users ml-2 mr-1"></i> Interfraternity Council - 1 year</li>
-                            <li class="indent-title"><i class="fas fa-chart-line mr-1"></i> VP Finance & Communication</li>
-                        </ul>
-                    </div>
-                    <!-- STA -->
-                    <div class="column">
-                        <h4 class="is-size-5 has-text-weight-bold">St. Anthony High School</h4>
-                        <i class="has-text-grey">Effingham, IL | 2015-2019</i>
-                        <p class="is-italic">High School Diploma</p>
-                        <p></p>
-                    </div>
+        </section>
+
+        <!-- Education -->
+        <section class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="education-grid">
+                <div class="education-item">
+                    <h3>Illinois Wesleyan University</h3>
+                    <div class="location">Bloomington, IL | 2019-2023</div>
+                    <div class="degree">Bachelor's of Science, Computer Science</div>
+                    <ul>
+                        <li>NCAA Baseball | 2019-2023</li>
+                        <li>Theta Chi Fraternity | 2019-2023
+                            <ul style="list-style-type: none; padding-left: 1em;">
+                                President<br>
+                                House Manager<br>
+                                Chair of Alumni Relations
+                            </ul>
+                        </li>
+                        <li>Interfraternity Council | 2022
+                            <ul style="list-style-type: none; padding-left: 1em;">
+                                VP Finance & Communication
+                            </ul>
+                    </ul>
+                                    </div>
+                <div class="education-item">
+                    <h3>St. Anthony High School</h3>
+                    <div class="location">Effingham, IL | 2015-2019</div>
+                    <div class="degree">High School Diploma</div>
                 </div>
             </div>
-        </div>
-        <hr>
-        <!-- Experience timeline -->
-        <div class="experience-section card">
-            <div class="card-content">
-                <h4 class="is-size-4 has-text-weight-bold mb-6">Experience</h4>
-                <div class="timeline mt-4">
-                    <div class="timeline-line"></div>
-                    <!-- MSBI Pt2 -->
-                    <div class="experience-card mb-6">
-                        <h5 class="is-size-5 has-text-weight-semibold">InfoSec Analyst</h5>
-                        <p class="company">Midland States Bank</p>
-                        <p class="dates mb-0">December 2023 - Current</p>
-                        <p class="location">Hybrid - Effingham, IL</p>
-                    </div>
-                    <!-- CF -->
-                    <div class="experience-card mb-6">
-                        <h5 class="is-size-5 has-text-weight-semibold">IT Cloud Analyst</h5>
-                        <p class="company">COUNTRY Financial®</p>
-                        <p class="dates mb-0">June 2023 - December 2023</p>
-                        <p class="location">Bloomington, IL</p>
-                    </div>
-                    <!-- MSBI -->
-                    <div class="experience-card mb-6">  
-                        <h5 class="is-size-5 has-text-weight-semibold">InfoSec Intern</h5>
-                        <p class="company">Midland States Bank</p>
-                        <p class="dates mb-0">June 2022 - December 2022</p>
-                        <p class="location">Effingham, IL</p>
-                    </div>
-                    <!-- JCCI -->
-                    <div class="experience-card mb-6">
-                        <h5 class="is-size-5 has-text-weight-semibold">Summer Help</h5>
-                        <p class="company">Jansen Cable Construction, Inc.</p>
-                        <p class="dates mb-0">Summers, 2017-2021</p>
-                        <p class="location">Effingham, IL</p>
-                    </div>
+        </section>
+
+        <!-- Experience -->
+        <section class="section">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>InfoSec Analyst</h3>
+                    <div class="company">Midland States Bank</div>
+                    <div class="dates">December 2023 - Current</div>
+                    <div class="location">Effingham, IL</div>
+                </div>
+                <div class="timeline-item">
+                    <h3>IT Cloud Analyst</h3>
+                    <div class="company">COUNTRY Financial®</div>
+                    <div class="dates">June 2023 - December 2023</div>
+                    <div class="location">Bloomington, IL</div>
+                </div>
+                <div class="timeline-item">
+                    <h3>InfoSec Intern</h3>
+                    <div class="company">Midland States Bank</div>
+                    <div class="dates">June 2022 - December 2022</div>
+                    <div class="location">Effingham, IL</div>
+                </div>
+                <div class="timeline-item">
+                    <h3>Summer Help</h3>
+                    <div class="company">Jansen Cable Construction, Inc.</div>
+                    <div class="dates">Summers, 2017-2021</div>
+                    <div class="location">Effingham, IL</div>
                 </div>
             </div>
-        </div>
-        <br>
+        </section>
+
         <!-- Certifications -->
-        <div class="certifications-section card">
-            <div class="card-content">
-                <h4 class="is-size-4 has-text-weight-bold mb-4">Certifications</h4>
-                <div class="certification-cards-wrapper">
-                    <!-- AZ-900 -->
-                    <div class="certification-card">
-                        <img src="assets/63188c97fbd0a646ced923da_microsoft-azure-fundamentals-official-training-certification.png" alt="Microsoft Azure Fundamentals Certification">
-                        <div class="certification-details">
-                            <p class="certification-title">AZ-900</p>
-                            <p class="certification-description">Microsoft Azure Fundamentals</p>
-                            <p class="certification-description">ID: D84F176AAA932B0B</p>
-                            <a href="https://learn.microsoft.com/api/credentials/share/en-us/BlakeNiebrugge-7025/D84F176AAA932B0B?sharingId=E7D99C818E2A2A9F" class="certification-description" target="_blank">See More</a>
-                        </div>
-                    </div>
-                    <!-- CompTIA Network+ -->
-                    <div class="certification-card">
-                        <img src="assets/NetworkPlus.png" alt="CompTIA Network Plus">
-                        <div class="certification-details">
-                            <p class="certification-title">Network+</p>
-                            <p class="certification-description">CompTIA Network+</p>
-                            <p class="certification-description">ID: FN3NBQNQ5B111PK2</p>
-                            <a href="https://www.credly.com/badges/550df3c0-2bbb-4c03-800e-f3b260b365d1/public_url" class="certification-description" target="_blank">See More</a>
-                        </div>
-                    </div>
-                    <!-- CompTIA Security+-->
-                    <div class="certification-card in-progress">
-                        <img src="assets/SecurityPlus.png" alt="CompTIA Security Plus"> <!-- Replace "path/to/az-104-logo.png" with the actual path to the image -->
-                        <div class="certification-details">
-                            <p class="certification-title">Security+</p>
-                            <p class="certification-description">CompTIA Security+</p>
-                        </div>
-                    </div>
-                    <!-- Add more certification cards here as needed -->
+        <section class="section">
+            <h2 class="section-title">Certifications</h2>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <img src="assets/63188c97fbd0a646ced923da_microsoft-azure-fundamentals-official-training-certification.png" alt="Azure Fundamentals">
+                    <h4>AZ-900</h4>
+                    <p>Microsoft Azure Fundamentals</p>
+                    <p>ID: D84F176AAA932B0B</p>
+                    <a target="_blank" href="https://learn.microsoft.com/api/credentials/share/en-us/BlakeNiebrugge/D84F176AAA932B0B?sharingId=E7D99C818E2A2A9F" target="_blank">View Credential →</a>
+                </div>
+                <div class="cert-card">
+                    <img src="assets/NetworkPlus.png" alt="Network+">
+                    <h4>Network+</h4>
+                    <p>CompTIA Network+</p>
+                    <p>ID: FN3NBQNQ5B111PK2</p>
+                    <a target="_blank" href="https://www.credly.com/badges/550df3c0-2bbb-4c03-800e-f3b260b365d1/public_url" target="_blank">View Credential →</a>
+                </div>
+                <div class="cert-card">
+                    <img src="assets/SecurityPlus.png" alt="Security+">
+                    <h4>Security+</h4>
+                    <p>CompTIA Security+</p>
+                    <p>ID: 26E0ZP7QV2EQ2G62</p>
+                    <a target="_blank" href="https://www.credly.com/badges/dd5e0655-f220-4a06-ae7a-663ef98db3d5/public_url" target="_blank">View Credential →</a>
                 </div>
             </div>
-        </div>        
-        <br>
+        </section>
+
         <!-- Skills -->
-        <div class="skills-section card">
-            <div class="card-content">
-                <h4 class="is-size-4 has-text-weight-bold">Skills</h4>
-                <!-- Technical Skills -->
-                <div class="technical-skills skills-card">
-                    <h5 class="is-size-5 has-text-weight-semibold mb-3 mt-3">Technical Experiences</h5>
-                    <div class="skills-list">
-                        <div class="skill-card">
-                            <p class="skill-title">OOP Coding</p>
-                            <p class="skill-description">Python</p>
-                            <p class="skill-description">Java</p>
-                            <p class="skill-description">C++</p>
-                        </div>
-                        <div class="skill-card">
-                            <p class="skill-title">Web Coding</p>
-                            <p class="skill-description">HTML</p>
-                            <p class="skill-description">CSS</p>
-                            <p class="skill-description">Javascript</p>
-                        </div>
-                        <div class="skill-card">
-                            <p class="skill-title">Styling Frameworks</p>
-                            <p class="skill-description">Bulma</p>
-                            <p class="skill-description">Bootstrap</p>
-                        </div>
-                        <div class="skill-card">
-                            <p class="skill-title">Administration</p>
-                            <p class="skill-description">AD & Entra</p>
-                            <p class="skill-description">Exchange</p>
-                            <p class="skill-description">Intune</p>
-                        </div>
-                        <div class="skill-card">
-                            <p class="skill-title">Microsoft Azure</p>
-                            <p class="skill-description">Resource Management</p>
-                            <p class="skill-description">CLI/Automation</p>
-                            <p class="skill-description">Web Apps</p>
-                        </div>
-                        <div class="skill-card">
-                            <p class="skill-title">SIEM</p>
-                            <p class="skill-description">Defender Suite</p>
-                            <p class="skill-description">Rapid7 Suite</p>
-                            <p class="skill-description">Arctic Wolf Suite</p>
-                        </div>
-                        <div class="skill-card">
-                            <p class="skill-title">Endpoint Hardening</p>
-                            <p class="skill-description">CIS Baselines</p>
-                        </div>
-                        <div class="skill-card">
-                            <p class="skill-title">Database Querying</p>
-                            <p class="skill-description">SQL</p>
-                            <p class="skill-description">KQL (Azure)</p>
-                        </div>
-                        <div class="skill-card">
-                            <p class="skill-title">Version Control</p>
-                            <p class="skill-description">Github</p>
-                            <p class="skill-description">Gitlab</p>
-                            <p class="skill-description">CI/CD Pipelines</p>
-                        </div>
-                        <div class="skill-card">
-                            <p class="skill-title">OSs</p>
-                            <p class="skill-description">Windows 10</p>
-                            <p class="skill-description">Windows 11</p>
-                            <p class="skill-description">Linux Ubuntu</p>
-                        </div>
-                        <div class="skill-card">
-                            <p class="skill-title">Scrum Methodology</p>
-                        </div>
-                        <div class="skill-card">
-                            <p class="skill-title">KnowBe4 Suite</p>
-                        </div>
-                        <!-- Add more technical skill cards here as needed -->
+        <section class="section">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-category">
+                <h3>Technical Experiences</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-title">Administration</div>
+                        <p>AD & Entra</p>
+                        <p>Exchange</p>
+                        <p>Intune</p>
+                        <p>Abnormal AI</p>
+                        <p>Proxmox VE</p>
+                    </div>                    
+                    <div class="skill-card">
+                        <div class="skill-title">Microsoft Azure</div>
+                        <p>Resource Management</p>
+                        <p>CLI/Automation</p>
+                        <p>Static Web Apps</p>
+                        <p>Arc</p>
                     </div>
-                </div>
-        
-                <!-- Soft Skills -->
-                <div class="soft-skills skills-card">
-                    <h5 class="is-size-5 has-text-weight-semibold mb-3">Soft Skills</h5>
-                    <div class="skills-list">
-                        <div class="skill-card">
-                            <p class="skill-title">Time Management</p>
-                        </div>
-                        <div class="skill-card">
-                            <p class="skill-title">Collaboration</p>
-                        </div>
-                        <div class="skill-card">
-                            <p class="skill-title">Organization</p>
-                        </div>
-                        <div class="skill-card">
-                            <p class="skill-title">Teamwork</p>
-                        </div>
-                        <div class="skill-card">
-                            <p class="skill-title">Adaptibility</p>
-                        </div>
-                        <div class="skill-card">
-                            <p class="skill-title">Problem-Solving</p>
-                        </div>
-                        <div class="skill-card">
-                            <p class="skill-title">Critical Thinking</p>
-                        </div>
-                        <div class="skill-card">
-                            <p class="skill-title">Attention to Detail</p>
-                        </div>
-                        <!-- Add more soft skill cards here as needed -->
+                    <div class="skill-card">
+                        <div class="skill-title">Coding/Scripting</div>
+                        <p>Python</p>
+                        <p>Powershell</p>
+                        <p>Java</p>
+                        <p>C++</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-title">OSs</div>
+                        <p>Windows 10</p>
+                        <p>Windows 11</p>
+                        <p>Linux Ubuntu</p>
+                        <p>Kali Linux</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-title">Red Team Activites</div>
+                        <p>KnowBe4 Suite (phishing)</p>
+                        <p>Metasploit</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-title">MDR/EDR Engineering</div>
+                        <p>Defender Suite</p>
+                        <p>Rapid7 Suite</p>
+                        <p>Arctic Wolf Suite</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-title">Database Querying</div>
+                        <p>SQL</p>
+                        <p>KQL (Azure)</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-title">Web Coding</div>
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>Javascript</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-title">Compliance</div>
+                        <p>SOX</p>
+                        <p>COBIT</p>
                     </div>
                 </div>
             </div>
-        </div>
-        <br>
-        <!-- Projects/Portfolio -->
-        <div class="portfolio-section card">
-            <div class="card-content">
-                <h4 class="is-size-4 has-text-weight-bold mb-5">Portfolio/Projects</h4>
-                <div class="project-cards-wrapper">
-                    <!-- Website -->
-                    <div class="project-card">
-                        <h5 class="is-size-5 has-text-weight-semibold">This Website</h5>
-                        <p class="project-description mb-5">
-                            blakeniebrugge.com serves as a personal portfolio, showcasing my skills and experience in the field of
-                            IT and technology. It is built using HTML, CSS, and JavaScript, with responsive design for various devices.
-                            It is also 100% hosted on Microsoft Azure using Static Web Apps and CI/CD runners from GitHub.
-                        </p>
-                        <a href="https://github.com/blakeniebrugge/blakeniebruggecom2023/" class="project-link mb-3" target="_blank">View Source Code</a>
-                        <a href="mailto:blake@blakeniebrugge.com" class="project-link">Make a Suggestion!</a>
+            <div class="skills-category">
+                <h3>Soft Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-title">Time Management</div>
                     </div>
-                    <!-- DL Project -->
-                    <div class="project-card">
-                        <h5 class="is-size-5 has-text-weight-semibold">Deep Learning MLB Team Classifier</h5>
-                        <i>CS 387: Deep Learning @ Illinois Wesleyan</i>
-                        <br>
-                        <p class="project-description mt-2">
-                            Developed a PyTorch-based neural network to identify MLB players' teams based on profile pictures, achieving near 90% testing accuracy. 
-                            Scraped nearly 1,200 images from team websites for training. Includes a user-friendly interface for uploading images and testing the model.
-                        </p>
-                        <a href="https://colab.research.google.com/drive/1bA9Khc5fXruW86U0W3wdGG1g3isl3OO9?usp=sharing" class="project-link" target="_blank">View Project</a>
+                    <div class="skill-card">
+                        <div class="skill-title">Collaboration</div>
                     </div>
-                    <!-- Home Lab -->
-                    <div class="project-card">
-                        <h5 class="is-size-5 has-text-weight-semibold">Home Lab</h5>
-                        <p class="project-description mt-2">
-                            Repurposed a Dell OptiPlex 3040 into a Proxmox VE host that currently runs a number of small virtual machines running various tasks such as Twitter bots, a Tailscale server, 
-                            a Kali machine (with an an addititional, intentially vulnerable VM to test against), and a web server. Click below to be taken to a site currently being self-hosted!
-                        </p>
-                        <a href="https://status.blakeniebrugge.com" class="project-link" target="_blank">See Status</a>
-                        <a href="assets/Home Network Map - 09-15-2025.png" class="project-link">View Home Network Map</a>
+                    <div class="skill-card">
+                        <div class="skill-title">Organization</div>
                     </div>
-                    <!-- Home Lab:Setting up & Joining AD, and Pushing CIS Baselines via GP -->
-                    <div class="project-card">
-                        <h5 class="is-size-5 has-text-weight-semibold">Home Lab: Setting Up & Joining Active Directory Domain, and Pushing CIS Benchmarks via Group Policy</h5>
-                        <p class="project-description mt-2">
-                            Self-learning experience on my Home Lab environment that included setting up a Windows 2019 Server, configuring a new Active Directory domain, 
-                            joining that domain with a Windows 10 machine, and then pushing CIS Benchmarks to it via Group Policy.
-                        </p>
-                        <a href="assets/HomeLabProject1.pdf" class="project-link">Read Write-up</a>
+                    <div class="skill-card">
+                        <div class="skill-title">Teamwork</div>
                     </div>
-                    <!-- Home Lab: Re-architecting my home network-->
-                    <div class="project-card">
-                        <h5 class="is-size-5 has-text-weight-semibold">Home Lab: Re-architecting My Home Network After an ISP Change</h5>
-                        <p class="project-description mt-2">
-                            A case study which discusses multiple issues that arose after changing Internet Service Providers, which led to self hosted websites and a VPN server going offline.
-                        </p>
-                        <a href="assets/Homelab-ISPChange.pdf" class="project-link">Read Write-up</a>
+                    <div class="skill-card">
+                        <div class="skill-title">Adaptability</div>
                     </div>
-                    <!-- Add more project cards here as needed -->
+                    <div class="skill-card">
+                        <div class="skill-title">Problem-Solving</div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-title">Critical Thinking</div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-title">Attention to Detail</div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <br>
+        </section>
+
+        <!-- Projects -->
+        <section class="section">
+            <h2 class="section-title">Portfolio / Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>This Website</h3>
+                    <p>blakeniebrugge.com serves as a personal portfolio, showcasing my skills and experience in the field of IT and technology. It is built using HTML, CSS, and JavaScript, with responsive design for various devices. It is also 100% hosted on Microsoft Azure using Static Web Apps and CI/CD runners from GitHub.</p>
+                    <div class="project-links">
+                        <a target="_blank" href="https://github.com/blakeniebrugge/blakeniebruggecom2023/" class="project-link" target="_blank">View Source Code</a>
+                        <a href="mailto:blake@blakeniebrugge.com" class="project-link">Make a Suggestion</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Deep Learning MLB Team Classifier</h3>
+                    <div class="project-subtitle">CS 387: Deep Learning @ Illinois Wesleyan</div>
+                    <p>Developed a PyTorch-based neural network to identify MLB players' teams based on profile pictures, achieving near 90% testing accuracy. Scraped nearly 1,200 images from team websites for training. Includes a user-friendly interface for uploading images and testing the model.</p>
+                    <div class="project-links">
+                        <a target="_blank" href="https://colab.research.google.com/drive/1bA9Khc5fXruW86U0W3wdGG1g3isl3OO9?usp=sharing" class="project-link" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Home Lab</h3>
+                    <p>Repurposed a Dell OptiPlex 3040 into a Proxmox VE host that currently runs a number of small virtual machines running various tasks such as Twitter bots, a Tailscale server, a Kali machine (with an additionally, intentionally vulnerable VM to test against), and a web server.</p>
+                    <div class="project-links">
+                        <a target="_blank" href="https://status.blakeniebrugge.com" class="project-link" target="_blank">See Status</a>
+                        <a href="assets/Home Network Map - 09-15-2025.png" class="project-link" target="_blank">View Network Map</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Home Lab: Setting Up & Joining Active Directory Domain</h3>
+                    <p>Self-learning experience on my Home Lab environment that included setting up a Windows 2019 Server, configuring a new Active Directory domain, joining that domain with a Windows 10 machine, and then pushing CIS Benchmarks to it via Group Policy.</p>
+                    <div class="project-links">
+                        <a target="_blank" href="assets/HomeLabProject1.pdf" class="project-link" target="_blank">Read Write-up</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Home Lab: Re-architecting My Home Network After an ISP Change</h3>
+                    <p>A case study which discusses multiple issues that arose after changing Internet Service Providers, which led to self hosted websites and a VPN server going offline.</p>
+                    <div class="project-links">
+                        <a target="_blank" href="assets/Homelab-ISPChange.pdf" class="project-link" target="_blank">Read Write-up</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
+
+    <script>
+        const readMore = document.getElementById('read-more');
+        const readLess = document.getElementById('read-less');
+        const shortContent = document.querySelector('.short-content');
+        const fullContent = document.getElementById('full-content');
+
+        readMore.addEventListener('click', () => {
+            shortContent.style.display = 'none';
+            fullContent.style.display = 'block';
+        });
+
+        readLess.addEventListener('click', () => {
+            shortContent.style.display = 'block';
+            fullContent.style.display = 'none';
+        });
+    </script>
 </body>
-
-<!-- JS Script for expanding About Me section-->
-<script>
-    const readMoreLink = document.getElementById('read-more-link');
-    const readLessLink = document.getElementById('read-less-link');
-    const shortContent = document.querySelector('.short-content');
-    const fullContent = document.querySelector('.full-content');
-
-    readMoreLink.addEventListener('click', () => {
-    shortContent.style.display = 'none';
-    fullContent.style.display = 'block';
-    });
-
-    readLessLink.addEventListener('click', () => {
-    shortContent.style.display = 'block';
-    fullContent.style.display = 'none';
-    });
-</script>
-
-<!-- FontAwesome Icons -->
-<script src="https://kit.fontawesome.com/1591ae28e9.js"></script>
-
 </html>

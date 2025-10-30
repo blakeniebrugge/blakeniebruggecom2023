@@ -1,438 +1,448 @@
-/* Main Styles */
-
-/* Smooth Scrolling enabled*/
-html {
-    scroll-behavior: smooth;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Font and spacing adjustments for name/title/company */
-.name {
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-  
-
-/* Puts profile picture ad Name/Title/Company side by side while on desktop */
-@media (min-width: 601px) {
-    .container {
-        flex-direction: row; /* Arrange elements side by side */
-    }
-
-    .profile-picture-container {
-        margin-right: 2rem; /* Add some space between the profile picture and name/title/company */
-    }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif;
+    background: #0a0a0a;
+    color: #fff;
+    line-height: 1.6;
 }
 
-/* Profile Picture */
-.profile-picture-container img {
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    margin-bottom: 6rem;
+    padding: 4rem 0;
+}
+
+.profile-pic {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    object-fit: cover; /* Maintain aspect ratio */
+    margin: 0 auto 2rem;
+    border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
-/* Background */
-.resume-section {
-    padding: 20px;
-    background-image: url("assets/pexels-marek-piwnicki-12638474.jpg");
-    background-size: cover;
-    background-position: center center; 
-    background-repeat: no-repeat; 
-    background-attachment: fixed;
+.header h1 {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 200;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.5rem;
 }
 
-/* Indenting for titles under Illinois Wesleyan University */
-.indent-title {
-    margin-left: 1.5rem;
+.header .title {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 0.5rem;
 }
 
-/* Line with basic info and contact details */
-.basic-info {
-    font-size: 0.9rem;
-    font-weight: bold;
+.header .company {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.4);
+    margin-bottom: 2rem;
 }
 
-/* Links in basic info line */
-.basic-info a {
-    color: rgb(77, 77, 77);
-}
-
-/* Education list styles */
-.education-list {
-    list-style-type: none;
-    padding: 0;
-}
-
-.education-list li {
-    margin-bottom: 8px; /* Add more spacing between list items */
-    display: flex; /* Use flexbox for horizontal alignment */
-    align-items: center; /* Center the items vertically */
-    font-size: small;
-}
-
-.education-list li i {
-    margin-right: 10px; /* Add spacing between the icon and text */
-}
-
-/* Additional styles for the education section */
-.column p.is-italic {
-    font-style: italic;
-}
-
-.column i.has-text-grey {
-    color: grey;
-    font-size: 0.9rem;
-}
-
-/* CSS for the certifications section */
-.certifications-section {
+.contact-info {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: flex-start; /* Align items (including the title) to the left */
-    position: relative;
-}
-
-/* Certification card wrapper */
-.certification-cards-wrapper {
-    display: flex;
+    gap: 2rem;
+    justify-content: center;
     flex-wrap: wrap;
-    justify-content: center; /* Center items horizontally */
-}
-
-/* CSS for each certification card */
-.certification-card {
-    max-width: 200px;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    margin-right: 15px;
-    position: relative;
-    border: 1px solid #ccc;
-}
-
-
-/* CSS for the certification card image */
-.certification-card img {
-    max-width: 100%;
-    display: block;
-    border-radius: 8px;
-    margin-bottom: 10px;
-}
-
-/* CSS for the certification title */
-.certification-title {
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 5px;
-}
-
-/* CSS for the certification description */
-.certification-description {
     font-size: 0.9rem;
-    text-align: center;
-    margin-bottom: 5px;
-    display: flex;
-    flex-direction: column;
+    color: rgba(255, 255, 255, 0.5);
 }
 
-/* Overlay Properties */
-.certification-card.in-progress {
-    opacity: 0.6; /* Set the opacity to 60% (0.6) to make it appear greyed out */
-    pointer-events: none; /* Disable pointer events on the card so it cannot be interacted with */
+.contact-info a {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-/* Grey overlay pseudo-element for in-progress cards */
-.certification-card.in-progress::before {
-    content: ""; /* Empty content to create the pseudo-element */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 8px; /* Adjust the border-radius to match the certification card */
-    background-color: rgba(0, 0, 0, 0.6); /* Adjust the opacity value (0.6) for the desired grey overlay effect */
-    z-index: 1; /* Make sure the overlay is behind the content */
+.contact-info a:hover {
+    color: rgba(255, 255, 255, 0.9);
 }
 
-/* Text overlay for in-progress cards */
-.certification-card.in-progress::after {
-    content: "In Progress";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 1.25rem;
-    font-weight: bold;
-    z-index: 2;
-    white-space: nowrap; /* Display "In Progress" on one line */
+/* Section Headers */
+.section {
+    margin-bottom: 1rem;
 }
 
-/* Grey overlay for planned cards */
-.certification-card.planned {
-    opacity: 0.6; /* Set the opacity to 60% (0.6) to make it appear greyed out */
-    pointer-events: none; /* Disable pointer events on the card so it cannot be interacted with */
+.section-title {
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 1rem;
 }
 
-/* Text overlay for planned cards */
-.certification-card.planned::after {
-    content: "Planned";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 1.25rem;
-    font-weight: bold;
-    z-index: 2;
-    white-space: nowrap; /* Display "Planned" on one line */
+/* About */
+.about-content {
+    max-width: 800px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.7);
 }
 
-/* Grey overlay pseudo-element for planned cards */
-.certification-card.planned::before {
-    content: ""; /* Empty content to create the pseudo-element */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 8px; /* Adjust the border-radius to match the certification card */
-    background-color: rgba(0, 0, 0, 0.6); /* Adjust the opacity value (0.6) for the desired grey overlay effect */
-    z-index: 1; /* Make sure the overlay is behind the content */
+.about-content p {
+    margin-bottom: 1.5rem;
 }
 
-/* CSS for the "full" About Me content */
-.full-content {
-    display: none; /* Initially hide the full content */
-}
-
-/* Style for the "Read More" link */
-#read-more-link {
-    color: #007BFF; /* Customize the link color */
+.read-more {
+    color: rgba(255, 255, 255, 0.5);
     cursor: pointer;
-    display: block;
-    margin-top: 10px;
-    margin-left: 10px;
-    text-align: right;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+    display: inline-block;
+    margin-top: 1rem;
 }
 
-#read-more-link.collapsed::after {
-    content: "Read More"; /* Display "Read More" when the section is collapsed */
+.read-more:hover {
+    color: rgba(255, 255, 255, 0.9);
 }
 
-#read-more-link.expanded::after {
-    content: "Read Less"; /* Display "Read Less" when the section is expanded */
+.full-content {
+    display: none;
 }
 
-.read-more-link-container,
-.read-less-link-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px; /* Adjust this margin as needed */
+/* Education */
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
 }
 
-/* CSS for the experience section */
-.experience-section {
-    margin-top: 20px;
+.education-item h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 0.25rem;
 }
-  
-/* Timeline styles */
+
+.education-item .location {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.education-item .degree {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.education-item ul {
+    list-style: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+}
+
+.education-item ul li {
+    margin-bottom: 0.3rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.education-item ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+}
+
+/* Experience Timeline */
 .timeline {
     position: relative;
+    padding-left: 3rem;
 }
 
-.timeline-line {
+.timeline::before {
+    content: '';
     position: absolute;
+    left: 0;
     top: 0;
-    left: -1px; /* Adjust the left position to align the timeline on the left side */
+    bottom: 0;
     width: 2px;
-    height: 100%;
-    background-color: #ccc; /* Adjust the color of the timeline line */
+    background: rgba(255, 255, 255, 0.1);
 }
 
-.timeline-line::before,
-.timeline-line::after {
-    content: "";
-    position: absolute;
-    width: 2px;
-    height: 35px;
-}
-
-.timeline-line::before {
-    top: -35px;
-    background: linear-gradient(to bottom, transparent, #ccc);
-}
-
-.timeline-line::after {
-    bottom: -35px;
-    background: linear-gradient(to top, transparent, #ccc);
-}
-
-.year {
-    position: absolute;
-    top: -20px; /* Adjust the top position to move the years above the timeline */
-    left: -14px;
-    font-size: 0.8rem;
-    text-align: center; /* Center the text horizontally */
-    width: 30px; /* Set a fixed width to ensure enough space for the years */
-}
-
-.year::after {
-    content: "";
-    display: block;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color: #ccc; /* Adjust the color of the year markers */
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%); /* Center the dots horizontally */
-}
-
-.year:first-child::after {
-    border: 2px dotted #ccc; /* Add dotted styling to the top end of the timeline */
-}
-
-.year:last-child::after {
-    border: 2px dotted #ccc; /* Add dotted styling to the bottom end of the timeline */
-}
-
-/* Styling for each experience card */
-.experience-card {
+.timeline-item {
     position: relative;
-    padding-left: 40px; /* Add some spacing to the left of the card content to accommodate the timeline */
-    margin-bottom: 20px; /* Add some spacing between each experience card */
+    margin-bottom: 1rem;
 }
 
-.experience-card::before {
-    content: "";
+.timeline-item::before {
+    content: '';
     position: absolute;
-    top: 50%;
-    left: -8px; /* Adjust the left position to center the dots on the timeline */
-    transform: translateY(-50%);
+    left: -3.5rem;
+    top: 0.5rem;
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    box-shadow: 0 0 4px rgba(255, 166, 0, 0.2); /* Add a subtle shadow to the circle */
+    background: #eb6f09;
+    box-shadow: 0 0 0 4px #0a0a0a;
 }
 
-.experience-card:nth-child(2)::before {
-    background-color: #eb6f09; /* For alternating colors, change the background color for even numbered experience cards */
-}
-.experience-card:nth-child(3)::before {
-    background-color: #2a5e00; /* For alternating colors, change the background color for even numbered experience cards */
-}
-.experience-card:nth-child(4)::before {
-    background-color: #eb6f09; /* For alternating colors, change the background color for even numbered experience cards */
-}
-.experience-card:nth-child(5)::before {
-    background-color: #c50101; /* For alternating colors, change the background color for even numbered experience cards */
+.timeline-item:nth-child(2)::before {
+    background: #2a5e00;
 }
 
-/* Styling for dates and locations in Experience */
-.experience-card .dates {
-    font-size: 0.8rem;
+.timeline-item:nth-child(3)::before {
+    background: #eb6f09;
+}
+
+.timeline-item:nth-child(4)::before {
+    background: #c50101;
+}
+
+.timeline-item h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 0.25rem;
+}
+
+.timeline-item .company {
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 0.5rem;
+}
+
+.timeline-item .dates,
+.timeline-item .location {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.85rem;
     font-style: italic;
-    margin-bottom: 5px;
 }
 
-.experience-card .location {
-    font-size: 0.8rem;
-    font-style: italic;
+/* Certifications */
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
 }
 
-
-/* CSS for the skills section */
-.skills-section {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+.cert-card {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    transition: border-color 0.3s ease;
+    position: relative;
 }
 
-/* CSS for each skills card */
-.skills-card {
-    margin-bottom: 20px;
+.cert-card:hover {
+    border-color: rgba(255, 255, 255, 0.3);
 }
 
-/* CSS for the skills list */
-.skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.cert-card.in-progress {
+    opacity: 0.5;
 }
 
-/* CSS for each skill card */
+.cert-card.in-progress::after {
+    content: 'In Progress';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.9);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.cert-card img {
+    width: 175px;
+    height: 175px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.cert-card h4 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.cert-card p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.85rem;
+    margin-bottom: 0.25rem;
+}
+
+.cert-card a {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: color 0.3s ease;
+}
+
+.cert-card a:hover {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Skills */
+.skills-category {
+    margin-bottom: 3rem;
+}
+
+.skills-category h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
 .skill-card {
-    flex-basis: calc(33.33% - 20px);
-    width: 100%;
-    padding: 15px;
-    border: 1px solid #ccc;
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 8px;
-    margin-bottom: 10px;
-    display: flex; /* Use flexbox to center the text */
-    flex-direction: column; /* Stack the text vertically */
-    justify-content: center; /* Center the text vertically */
-    align-items: center; /* Center the text horizontally */
+    padding: 1.5rem;
+    text-align: center;
 }
 
-/* CSS for the skill title */
-.skill-title {
+.skill-card .skill-title {
+    font-weight: 400;
+    margin-bottom: 0.75rem;
     font-size: 1rem;
-    font-weight: bold;
-    margin-bottom: 5px;
-    text-align: center;
 }
 
-/* CSS for the skill description */
-.skill-description {
-    font-size: 0.9rem;
-    text-align: center;
-    margin-bottom: 5px;
+.skill-card p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.85rem;
+    margin-bottom: 0.25rem;
 }
 
-/* CSS for the portfolio section */
-.portfolio-section {
-    margin-top: 20px;
+/* Projects */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
 }
 
-.project-cards-wrapper {
-    display: grid; /* Use CSS Grid for layout */
-    grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
-    grid-gap: 20px; /* Add some spacing between the project cards */
-}
-
-/* Styling for project cards */
 .project-card {
-    max-width: 100%; 
-    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 8px;
-    background-color: #f5f5f5;
+    padding: 2rem;
+    transition: border-color 0.3s ease;
 }
 
-.project-card h5 {
+.project-card:hover {
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.project-card h3 {
     font-size: 1.2rem;
-    margin-bottom: 10px;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
 }
 
-.project-description {
-    font-size: 0.9rem;
-    margin-bottom: 15px;
+.project-card .project-subtitle {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.4);
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.project-card p {
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .project-link {
     display: inline-block;
-    background-color: #007bff; /* Adjust the color as needed */
-    color: white;
-    padding: 8px 15px;
-    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
-    transition: background-color 0.3s ease;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
 }
 
 .project-link:hover {
-    background-color: #0056b3; /* Adjust the hover color as needed */
+    border-color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.9);
 }
 
+/* Back to Home */
+.back-home {
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+    padding: 0.75rem 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    transition: all 0.3s ease;
+    background: #0a0a0a;
+    z-index: 100;
+}
 
+.back-home:hover {
+    border-color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 2rem 1.5rem;
+    }
+
+    .header {
+        margin-bottom: 4rem;
+    }
+
+    .section {
+        margin-bottom: 4rem;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .timeline {
+        padding-left: 2rem;
+    }
+
+    .timeline-item::before {
+        left: -2.5rem;
+    }
+
+    .back-home {
+        top: 1rem;
+        left: 1rem;
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+
+    .projects-grid,
+    .cert-grid,
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
