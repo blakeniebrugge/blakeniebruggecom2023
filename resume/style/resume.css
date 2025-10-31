@@ -1,3 +1,4 @@
+/* ──────────── RESET ──────────── */
 * {
     margin: 0;
     padding: 0;
@@ -11,32 +12,93 @@ body {
     line-height: 1.6;
 }
 
+/* ──────────── LAYOUT ──────────── */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 4rem 2rem;
 }
 
-/* Header */
+/* ──────────── PROFILE HEADER ──────────── */
+/* Overall container */
+.profile-name-container {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #0a0a0a;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.2rem 0;
+  transition: all 0.4s ease;
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 0px solid rgba(255, 255, 255, 0.1);
+}
+
+.profile-name-container .name-block {
+  display: flex;
+  flex-direction: column; /* ensures subtitle is below h1 */
+  align-items: flex-start; /* left-align text */
+}
+
+/* Profile image */
+.profile-name-container img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: all 0.5s ease;
+}
+
+/* Profile name */
+.profile-name-container h1 {
+  font-size: 2rem;
+  font-weight: 300;
+  transition: all 0.5s ease;
+}
+
+/* Fade + slide effect as user scrolls */
+.profile-name-container.scrolled {
+  background: #0a0a0a;
+  justify-content: flex-start;
+  padding-left: 2rem;
+}
+
+.profile-name-container.scrolled img {
+  width: 60px;
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.profile-name-container.scrolled h1 {
+  font-size: 1.5rem;
+  transform: translateX(10px);
+  opacity: 1;
+}
+
+.subtitle {
+  opacity: 0;
+  font-size: 0.75rem;
+  font-weight: 300;
+  margin: 0;
+  color: #ccc;
+  transform: translateY(10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* ──────────── HEADER INFO ──────────── */
 .header {
     text-align: center;
-    margin-bottom: 6rem;
-    padding: 4rem 0;
+    margin-bottom: -2rem;
+    margin-top: 2rem;
+    padding-bottom: 4rem;
 }
 
-.profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin: 0 auto 2rem;
-    border: 2px solid rgba(255, 255, 255, 0.2);
-}
-
-.header h1 {
-    font-size: clamp(2.5rem, 6vw, 4rem);
-    font-weight: 200;
-    letter-spacing: -0.02em;
-    margin-bottom: 0.5rem;
+.header-info {
+    text-align: center;
 }
 
 .header .title {
@@ -62,7 +124,7 @@ body {
 }
 
 .contact-info a {
-    color: rgba(255, 255, 255, 0.5);
+    color: inherit;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -71,9 +133,9 @@ body {
     color: rgba(255, 255, 255, 0.9);
 }
 
-/* Section Headers */
+/* ──────────── SECTIONS ──────────── */
 .section {
-    margin-bottom: 1rem;
+    margin-bottom: -2rem;
 }
 
 .section-title {
@@ -86,7 +148,7 @@ body {
     padding-bottom: 1rem;
 }
 
-/* About */
+/* ──────────── ABOUT ──────────── */
 .about-content {
     max-width: 800px;
     font-size: 1.1rem;
@@ -102,9 +164,9 @@ body {
     color: rgba(255, 255, 255, 0.5);
     cursor: pointer;
     font-size: 0.9rem;
-    transition: color 0.3s ease;
     display: inline-block;
     margin-top: 1rem;
+    transition: color 0.3s ease;
 }
 
 .read-more:hover {
@@ -115,7 +177,7 @@ body {
     display: none;
 }
 
-/* Education */
+/* ──────────── EDUCATION ──────────── */
 .education-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -125,7 +187,7 @@ body {
 .education-item h3 {
     font-size: 1.3rem;
     font-weight: 400;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.5rem;
 }
 
 .education-item .location {
@@ -158,32 +220,32 @@ body {
     left: 0;
 }
 
-/* Experience Timeline */
+/* ──────────── EXPERIENCE ──────────── */
 .timeline {
     position: relative;
-    padding-left: 3rem;
+    padding-left: 5rem;
 }
 
 .timeline::before {
     content: '';
     position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
+    left: 2rem ;
+    top: 1rem;
+    bottom: -2rem;
     width: 2px;
     background: rgba(255, 255, 255, 0.1);
 }
 
 .timeline-item {
     position: relative;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 }
 
 .timeline-item::before {
     content: '';
     position: absolute;
-    left: -3.5rem;
-    top: 0.5rem;
+    left: -3.425rem;
+    top: 0.55rem;
     width: 16px;
     height: 16px;
     border-radius: 50%;
@@ -191,17 +253,9 @@ body {
     box-shadow: 0 0 0 4px #0a0a0a;
 }
 
-.timeline-item:nth-child(2)::before {
-    background: #2a5e00;
-}
-
-.timeline-item:nth-child(3)::before {
-    background: #eb6f09;
-}
-
-.timeline-item:nth-child(4)::before {
-    background: #c50101;
-}
+.timeline-item:nth-child(2)::before { background: #2a5e00; }
+.timeline-item:nth-child(3)::before { background: #eb6f09; }
+.timeline-item:nth-child(4)::before { background: #c50101; }
 
 .timeline-item h3 {
     font-size: 1.3rem;
@@ -221,7 +275,7 @@ body {
     font-style: italic;
 }
 
-/* Certifications */
+/* ──────────── CERTIFICATIONS ──────────── */
 .cert-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -230,16 +284,14 @@ body {
 
 .cert-card {
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    padding: 2rem;
+    border-radius: 4px;
+    padding: 1rem;
     text-align: center;
     transition: border-color 0.3s ease;
     position: relative;
 }
 
-.cert-card:hover {
-    border-color: rgba(255, 255, 255, 0.3);
-}
+.cert-card:hover { border-color: rgba(255, 255, 255, 0.3); }
 
 .cert-card.in-progress {
     opacity: 0.5;
@@ -259,15 +311,15 @@ body {
 }
 
 .cert-card img {
-    width: 175px;
-    height: 175px;
+    width: 100px;
+    height: 100px;
     object-fit: contain;
     margin-bottom: 1rem;
 }
 
 .cert-card h4 {
-    font-size: 1.1rem;
-    font-weight: 400;
+    font-size: 1.2rem;
+    font-weight: 500;
     margin-bottom: 0.5rem;
 }
 
@@ -280,15 +332,17 @@ body {
 .cert-card a {
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
-    font-size: 0.85rem;
+    font-size: 1rem;
     transition: color 0.3s ease;
+    font-weight: 500;
+    margin-top: 1rem;
+    display: inline-block;
+    margin-bottom: 0.25rem;
 }
 
-.cert-card a:hover {
-    color: rgba(255, 255, 255, 0.9);
-}
+.cert-card a:hover { color: rgba(255, 255, 255, 0.9); }
 
-/* Skills */
+/* ──────────── SKILLS ──────────── */
 .skills-category {
     margin-bottom: 3rem;
 }
@@ -308,13 +362,13 @@ body {
 
 .skill-card {
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
+    border-radius: 4px;
     padding: 1.5rem;
     text-align: center;
 }
 
 .skill-card .skill-title {
-    font-weight: 400;
+    font-weight: 500;
     margin-bottom: 0.75rem;
     font-size: 1rem;
 }
@@ -325,7 +379,7 @@ body {
     margin-bottom: 0.25rem;
 }
 
-/* Projects */
+/* ──────────── PROJECTS ──────────── */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -334,18 +388,16 @@ body {
 
 .project-card {
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
+    border-radius: 4px;
     padding: 2rem;
     transition: border-color 0.3s ease;
 }
 
-.project-card:hover {
-    border-color: rgba(255, 255, 255, 0.3);
-}
+.project-card:hover { border-color: rgba(255, 255, 255, 0.3); }
 
 .project-card h3 {
     font-size: 1.2rem;
-    font-weight: 400;
+    font-weight: 500;
     margin-bottom: 0.5rem;
 }
 
@@ -365,17 +417,17 @@ body {
 .project-links {
     display: flex;
     gap: 1rem;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .project-link {
     display: inline-block;
-    padding: 0.5rem 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: -1rem 1rem;
     border-radius: 4px;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
-    font-size: 0.85rem;
+    font-size: 1rem;
+    font-weight: 600;
     transition: all 0.3s ease;
 }
 
@@ -384,40 +436,36 @@ body {
     color: rgba(255, 255, 255, 0.9);
 }
 
-/* Back to Home */
-.back-home {
-    position: fixed;
-    top: 2rem;
-    left: 2rem;
-    padding: 0.75rem 1.5rem;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 2px;
-    color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: 500;
-    letter-spacing: 0.08em;
-    transition: all 0.3s ease;
-    background: #0a0a0a;
-    z-index: 100;
-}
-
-.back-home:hover {
-    border-color: rgba(255, 255, 255, 0.5);
-    color: rgba(255, 255, 255, 0.9);
-}
-
+/* ──────────── RESPONSIVE ──────────── */
 @media (max-width: 768px) {
     .container {
         padding: 2rem 1.5rem;
     }
 
+    .profile-name-container {
+        padding: 2rem 0 1rem;
+    }
+
+    .profile-name-container.scrolled {
+        top: 1rem;
+        left: 1rem;
+    }
+
+    .profile-name-container.scrolled .profile-pic {
+        width: 40px;
+        height: 40px;
+    }
+
+    .profile-name-container.scrolled h1 {
+        font-size: 1rem;
+    }
+
     .header {
-        margin-bottom: 4rem;
+        margin-bottom: -2rem;
     }
 
     .section {
-        margin-bottom: 4rem;
+        margin-bottom: -2rem;
     }
 
     .contact-info {
@@ -426,18 +474,11 @@ body {
     }
 
     .timeline {
-        padding-left: 2rem;
+        padding-left: 4.05rem;
     }
 
     .timeline-item::before {
         left: -2.5rem;
-    }
-
-    .back-home {
-        top: 1rem;
-        left: 1rem;
-        padding: 0.5rem 1rem;
-        font-size: 0.8rem;
     }
 
     .projects-grid,

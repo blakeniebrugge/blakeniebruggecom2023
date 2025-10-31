@@ -15,15 +15,22 @@
 </head>
 
 <body>
-    <a href="https://blakeniebrugge.com" class="back-home">← HOME</a>
-
     <div class="container">
-        <!-- Header -->
-        <div class="header">
+        <!-- Profile and Name (moves on scroll) -->
+        <div class="profile-name-container" id="profileName">
             <img src="assets/headshot.jpeg" alt="Blake Niebrugge" class="profile-pic">
-            <h1>Blake Niebrugge</h1>
-            <div class="title">InfoSec Analyst</div>
-            <div class="company">Midland States Bank</div>
+            <div class="name-block">
+                <h1>Blake Niebrugge</h1>
+                <p class="subtitle">IT Security Professional</p>
+            </div>
+        </div>
+
+        <!-- Header (stays put) -->
+        <div class="header">
+            <div class="header-info">
+                <div class="title">Information Security Analyst</div>
+                <div class="company">Midland States Bank</div>
+            </div>
             <div class="contact-info">
                 <span>Effingham, IL</span>
                 <a href="mailto:blake@blakeniebrugge.com">blake@blakeniebrugge.com</a>
@@ -73,7 +80,7 @@
                                 VP Finance & Communication
                             </ul>
                     </ul>
-                                    </div>
+                </div>
                 <div class="education-item">
                     <h3>St. Anthony High School</h3>
                     <div class="location">Effingham, IL | 2015-2019</div>
@@ -122,21 +129,21 @@
                     <h4>AZ-900</h4>
                     <p>Microsoft Azure Fundamentals</p>
                     <p>ID: D84F176AAA932B0B</p>
-                    <a target="_blank" href="https://learn.microsoft.com/api/credentials/share/en-us/BlakeNiebrugge/D84F176AAA932B0B?sharingId=E7D99C818E2A2A9F" target="_blank">View Credential →</a>
+                    <a target="_blank" href="https://learn.microsoft.com/api/credentials/share/en-us/BlakeNiebrugge/D84F176AAA932B0B?sharingId=E7D99C818E2A2A9F">– View Credential →</a>
                 </div>
                 <div class="cert-card">
                     <img src="assets/NetworkPlus.png" alt="Network+">
                     <h4>Network+</h4>
                     <p>CompTIA Network+</p>
                     <p>ID: FN3NBQNQ5B111PK2</p>
-                    <a target="_blank" href="https://www.credly.com/badges/550df3c0-2bbb-4c03-800e-f3b260b365d1/public_url" target="_blank">View Credential →</a>
+                    <a target="_blank" href="https://www.credly.com/badges/550df3c0-2bbb-4c03-800e-f3b260b365d1/public_url">– View Credential →</a>
                 </div>
                 <div class="cert-card">
                     <img src="assets/SecurityPlus.png" alt="Security+">
                     <h4>Security+</h4>
                     <p>CompTIA Security+</p>
                     <p>ID: 26E0ZP7QV2EQ2G62</p>
-                    <a target="_blank" href="https://www.credly.com/badges/dd5e0655-f220-4a06-ae7a-663ef98db3d5/public_url" target="_blank">View Credential →</a>
+                    <a target="_blank" href="https://www.credly.com/badges/dd5e0655-f220-4a06-ae7a-663ef98db3d5/public_url">– View Credential →</a>
                 </div>
             </div>
         </section>
@@ -244,8 +251,8 @@
                     <h3>This Website</h3>
                     <p>blakeniebrugge.com serves as a personal portfolio, showcasing my skills and experience in the field of IT and technology. It is built using HTML, CSS, and JavaScript, with responsive design for various devices. It is also 100% hosted on Microsoft Azure using Static Web Apps and CI/CD runners from GitHub.</p>
                     <div class="project-links">
-                        <a target="_blank" href="https://github.com/blakeniebrugge/blakeniebruggecom2023/" class="project-link" target="_blank">View Source Code</a>
-                        <a href="mailto:blake@blakeniebrugge.com" class="project-link">Make a Suggestion</a>
+                        <a target="_blank" href="https://github.com/blakeniebrugge/blakeniebruggecom2023/" class="project-link" target="_blank">– View Source Code →</a>
+                        <a href="mailto:blake@blakeniebrugge.com" class="project-link">– Make a Suggestion →</a>
                     </div>
                 </div>
                 <div class="project-card">
@@ -253,29 +260,29 @@
                     <div class="project-subtitle">CS 387: Deep Learning @ Illinois Wesleyan</div>
                     <p>Developed a PyTorch-based neural network to identify MLB players' teams based on profile pictures, achieving near 90% testing accuracy. Scraped nearly 1,200 images from team websites for training. Includes a user-friendly interface for uploading images and testing the model.</p>
                     <div class="project-links">
-                        <a target="_blank" href="https://colab.research.google.com/drive/1bA9Khc5fXruW86U0W3wdGG1g3isl3OO9?usp=sharing" class="project-link" target="_blank">View Project</a>
+                        <a target="_blank" href="https://colab.research.google.com/drive/1bA9Khc5fXruW86U0W3wdGG1g3isl3OO9?usp=sharing" class="project-link" target="_blank">– View Project →</a>
                     </div>
                 </div>
                 <div class="project-card">
                     <h3>Home Lab</h3>
                     <p>Repurposed a Dell OptiPlex 3040 into a Proxmox VE host that currently runs a number of small virtual machines running various tasks such as Twitter bots, a Tailscale server, a Kali machine (with an additionally, intentionally vulnerable VM to test against), and a web server.</p>
                     <div class="project-links">
-                        <a target="_blank" href="https://status.blakeniebrugge.com" class="project-link" target="_blank">See Status</a>
-                        <a href="assets/Home Network Map - 09-15-2025.png" class="project-link" target="_blank">View Network Map</a>
+                        <a target="_blank" href="https://status.blakeniebrugge.com" class="project-link" target="_blank">– See Status →</a>
+                        <a href="assets/Home Network Map - 09-15-2025.png" class="project-link" target="_blank">– View Network Map →</a>
                     </div>
                 </div>
                 <div class="project-card">
                     <h3>Home Lab: Setting Up & Joining Active Directory Domain</h3>
                     <p>Self-learning experience on my Home Lab environment that included setting up a Windows 2019 Server, configuring a new Active Directory domain, joining that domain with a Windows 10 machine, and then pushing CIS Benchmarks to it via Group Policy.</p>
                     <div class="project-links">
-                        <a target="_blank" href="assets/HomeLabProject1.pdf" class="project-link" target="_blank">Read Write-up</a>
+                        <a target="_blank" href="assets/HomeLabProject1.pdf" class="project-link" target="_blank">– Read Write-up →</a>
                     </div>
                 </div>
                 <div class="project-card">
                     <h3>Home Lab: Re-architecting My Home Network After an ISP Change</h3>
                     <p>A case study which discusses multiple issues that arose after changing Internet Service Providers, which led to self hosted websites and a VPN server going offline.</p>
                     <div class="project-links">
-                        <a target="_blank" href="assets/Homelab-ISPChange.pdf" class="project-link" target="_blank">Read Write-up</a>
+                        <a target="_blank" href="assets/Homelab-ISPChange.pdf" class="project-link" target="_blank">– Read Write-up →</a>
                     </div>
                 </div>
             </div>
@@ -287,15 +294,40 @@
         const readLess = document.getElementById('read-less');
         const shortContent = document.querySelector('.short-content');
         const fullContent = document.getElementById('full-content');
+        const profileContainer = document.querySelector('.profile-name-container');
+        const profileImg = profileContainer.querySelector('img');
+        const profileName = profileContainer.querySelector('h1');
+        const subtitle = profileContainer.querySelector('.subtitle');
 
-        readMore.addEventListener('click', () => {
-            shortContent.style.display = 'none';
-            fullContent.style.display = 'block';
+        readMore?.addEventListener('click', () => {
+        shortContent.style.display = 'none';
+        fullContent.style.display = 'block';
         });
 
-        readLess.addEventListener('click', () => {
-            shortContent.style.display = 'block';
-            fullContent.style.display = 'none';
+        readLess?.addEventListener('click', () => {
+        shortContent.style.display = 'block';
+        fullContent.style.display = 'none';
+        });
+
+        window.addEventListener('scroll', () => {
+        const scrollTop = window.scrollY;
+        const fadeStart = 0;
+        const fadeEnd = 200; // distance over which animation happens
+        const progress = Math.min(Math.max((scrollTop - fadeStart) / (fadeEnd - fadeStart), 0), 1);
+
+        // fade in bottom border
+        profileContainer.style.borderBottom = `${progress}px solid rgba(255,255,255,0.1)`;
+
+        // Interpolated transforms
+        const imgTranslate = -progress * 10;   // move left
+        const nameTranslate = -progress * 70;   // move left slightly
+
+        profileImg.style.transform = `translateX(${imgTranslate}px) scale(${1 - progress * 0.5})`;
+        profileName.style.transform = `translateX(${nameTranslate}px) scale(${1 - progress * 0.3})`;
+
+        // Fade in subtitle as we scroll
+        subtitle.style.opacity = progress;
+        subtitle.style.transform = `translateX(${-progress * 35}px) translateY(${10 - progress * 20}px)`;
         });
     </script>
 </body>
