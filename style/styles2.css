@@ -23,7 +23,7 @@ body {
     flex-direction: column;
     justify-content: center;
     padding: 4rem;
-    min-height: 100vh;
+    min-height: fit-content;
     position: relative;
 }
 
@@ -169,7 +169,7 @@ body {
     animation: fadeIn 1s ease-out 1.4s forwards;
     text-transform: uppercase;
     font-weight: 300;
-    padding: 0.75rem 0.5rem;
+    padding: 0.5rem 0.5rem;
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 2px;
 }
@@ -246,6 +246,7 @@ body {
 @media (max-width: 768px) {
     .hero {
         padding: 2rem;
+        margin-bottom: 7rem;
     }
 
     .name {
@@ -270,19 +271,19 @@ body {
     }
 
     .social-grid {
-        bottom: 3rem;
+        bottom: 1rem;
         right: 2rem;
         gap: 1.5rem;
     }
 
     .email {
-        bottom: 3rem;
+        bottom: 1rem;
         left: 1.5rem;
-        font-size: 0.65rem;
+        font-size: 0.5rem;
     }
 
     .resume-link {
-        top: 3.5rem;
+        top: 1rem;
         right: 2rem;
         font-size: 0.9rem;
     }
