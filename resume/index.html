@@ -16,337 +16,341 @@
 </head>
 
 <body>
-    <div class="container">
-        <!-- Profile and Name (moves on scroll) -->
-        <div class="profile-name-container" id="profileName">
-            <img src="assets/headshot.jpeg" alt="Blake Niebrugge" class="profile-pic">
-            <div class="name-block">
-                <h1>Blake Niebrugge</h1>
-                <p class="subtitle">IT Security Professional</p>
+    <div id="scroll-root">
+        <div class="container">
+            <!-- Profile and Name (moves on scroll) -->
+            <div class="profile-name-container" id="profileName">
+                <img src="assets/headshot.jpeg" alt="Blake Niebrugge" class="profile-pic">
+                <div class="name-block">
+                    <h1>Blake Niebrugge</h1>
+                    <p class="subtitle">IT Security Professional</p>
+                </div>
             </div>
+
+            <!-- Header (stays put) -->
+            <div class="header">
+                <div class="header-info">
+                    <div class="title">Security Analyst</div>
+                    <div class="company">Midland States Bank</div>
+                </div>
+                <div class="contact-info">
+                    <span>St. Louis, Missouri</span>
+                    <a href="mailto:blake@blakeniebrugge.com">blake@blakeniebrugge.com</a>
+                    <a href="https://blakeniebrugge.com">blakeniebrugge.com</a>
+                </div>
+            </div>
+
+            <!-- About -->
+            <section class="section">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="short-content">
+                        <p>I'm a security professional with experience across security platforms, incident investigation, cloud infrastructure, and automation. In my current role, I work on integrating security technologies, improving security visibility, investigating suspicious activity, and building automated workflows. I'm particularly interested in the engineering side of cybersecurity, including network security, cloud security, and infrastructure.</p>
+                        <span class="read-more" id="read-more">Read More →</span>
+                    </div>
+                    <div class="full-content" id="full-content">
+                        <p>I'm a security professional with experience across security platforms, incident investigation, cloud infrastructure, and automation. In my current role, I work on integrating security technologies, improving security visibility, investigating suspicious activity, and building automated workflows. I'm particularly interested in the engineering side of cybersecurity, including network security, cloud security, and infrastructure.</p>
+                        <p>Outside of work, I enjoy building and experimenting with technology. My homelab gives me a place to get hands-on with virtualization, Linux, networking, and security projects beyond my day-to-day responsibilities. I also enjoy scripting and finding practical ways to make systems more efficient and secure.</p>
+                        <p>When I'm not working on something technical, you'll probably find me watching hockey, baseball, or football, or out on a golf course trying to get better. I'm also a computer science graduate, and building this website has been another opportunity to put those skills to use.</p>
+                        <p>I'm always interested in connecting with people who enjoy technology, solving difficult problems, and building things that work well. Feel free to reach out!</p>
+                        <p>- Blake</p>
+                        <span class="read-more" id="read-less">Read Less ←</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience -->
+            <section class="section">
+                <h2 class="section-title">Professional Experience</h2>
+                <div class="timeline-scroll">
+                    <div class="timeline-track">
+                        <div class="timeline-item">
+                            <h3>InfoSec Analyst</h3>
+                            <div class="company">Midland States Bank</div>
+                            <div class="dates">December 2023 - Present</div>
+                            <div class="location">Remote</div>
+                        </div>
+                        <div class="timeline-item">
+                            <h3>IT Cloud Analyst</h3>
+                            <div class="company">COUNTRY Financial®</div>
+                            <div class="dates">June 2023 - December 2023</div>
+                            <div class="location">Bloomington, IL</div>
+                        </div>
+                        <div class="timeline-item">
+                            <h3>InfoSec Intern</h3>
+                            <div class="company">Midland States Bank</div>
+                            <div class="dates">June 2022 - December 2022</div>
+                            <div class="location">Effingham, IL</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education -->
+            <section class="section">
+                <h2 class="section-title">Education</h2>
+                <div class="education-grid">
+                    <div class="education-item">
+                        <h3>Illinois Wesleyan University</h3>
+                        <div class="location">Bloomington, IL | 2019-2023</div>
+                        <div class="degree">Bachelor's of Science, Computer Science</div>
+                        <ul>
+                            <li>NCAA Baseball | 2019-2023</li>
+                            <li>Theta Chi Fraternity | 2019-2023
+                                <ul style="list-style-type: none; padding-left: 1em;">
+                                    President<br>
+                                    House Manager<br>
+                                    Chair of Alumni Relations
+                                </ul>
+                            </li>
+                            <li>Interfraternity Council | 2022
+                                <ul style="list-style-type: none; padding-left: 1em;">
+                                    VP Finance & Communication
+                                </ul>
+                        </ul>
+                    </div>
+                    <div class="education-item">
+                        <h3>St. Anthony High School</h3>
+                        <div class="location">Effingham, IL | 2015-2019</div>
+                        <div class="degree">High School Diploma</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Certifications -->
+            <section class="section">
+                <h2 class="section-title">Certifications</h2>
+                <div class="cert-grid">
+                    <div class="cert-card">
+                        <img src="assets/63188c97fbd0a646ced923da_microsoft-azure-fundamentals-official-training-certification.png" alt="Azure Fundamentals">
+                        <h4>AZ-900</h4>
+                        <p>Microsoft Azure Fundamentals</p>
+                        <p>ID: D84F176AAA932B0B</p>
+                        <a target="_blank" href="https://learn.microsoft.com/api/credentials/share/en-us/BlakeNiebrugge/D84F176AAA932B0B?sharingId=E7D99C818E2A2A9F">– View Credential →</a>
+                    </div>
+                    <div class="cert-card">
+                        <img src="assets/NetworkPlus.png" alt="Network+">
+                        <h4>Network+</h4>
+                        <p>CompTIA Network+</p>
+                        <p>ID: FN3NBQNQ5B111PK2</p>
+                        <a target="_blank" href="https://www.credly.com/badges/550df3c0-2bbb-4c03-800e-f3b260b365d1/public_url">– View Credential →</a>
+                    </div>
+                    <div class="cert-card">
+                        <img src="assets/SecurityPlus.png" alt="Security+">
+                        <h4>Security+</h4>
+                        <p>CompTIA Security+</p>
+                        <p>ID: 26E0ZP7QV2EQ2G62</p>
+                        <a target="_blank" href="https://www.credly.com/badges/dd5e0655-f220-4a06-ae7a-663ef98db3d5/public_url">– View Credential →</a>
+                    </div>
+                    <div class="cert-card in-progress">
+                        <img src="assets/PenTestPlus.png" alt="PenTest+">
+                        <h4>PentTest+</h4>
+                        <p>CompTIA PenTest+</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills -->
+            <section class="section">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-category">
+                    <h3>Technical Experiences</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-title">Security Platforms</div>
+                            <p>Microsoft Defender</p>
+                            <p>Arctic Wolf</p>
+                            <p>Rapid7</p>
+                            <p>Abnormal AI</p>
+                            <p>Microsoft Purview</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-title">Cloud</div>
+                            <p>Microsoft Azure</p>
+                            <p>Entra ID & Active Directory</p>
+                            <p>Microsoft 365</p>
+                            <p>Intune</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-title">Networking</div>
+                            <p>TCP/IP & Subnetting</p>
+                            <p>DNS & DHCP</p>
+                            <p>VPNs & Network Segmentation</p>
+                            <p>Cisco Umbrella</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-title">Systems</div>
+                            <p>Windows</p>
+                            <p>Ubuntu Linux</p>
+                            <p>Kali Linux</p>
+                            <p>Proxmox VE</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-title">Automation</div>
+                            <p>PowerShell</p>
+                            <p>Python</p>
+                            <p>API Integrations</p>
+                            <p>Azure CLI</p>
+                            <p>Ansible</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-title">Security Testing</div>
+                            <p>Nmap</p>
+                            <p>Burp Suite</p>
+                            <p>Metasploit</p>
+                            <p>Kali Linux</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-title">Analysis</div>
+                            <p>Security Investigations</p>
+                            <p>Log Analysis</p>
+                            <p>Kusto Query Language (KQL)</p>
+                            <p>Grafana & Alloy</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-title">Development</div>
+                            <p>HTML & CSS</p>
+                            <p>JavaScript</p>
+                            <p>SQL</p>
+                            <p>Java</p>
+                            <p>C++</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-title">Governance</div>
+                            <p>SOX IT General Controls</p>
+                            <p>COBIT</p>
+                            <p>Security Control Testing</p>
+                            <p>Audit Support</p>
+                        </div>
+                    </div>
+                <div class="skills-category">
+                    <h3>Soft Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-title">Time Management</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-title">Collaboration</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-title">Organization</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-title">Teamwork</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-title">Adaptability</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-title">Problem-Solving</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-title">Critical Thinking</div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-title">Attention to Detail</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects -->
+            <section class="section">
+                <h2 class="section-title">Portfolio / Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>This Website</h3>
+                        <p>blakeniebrugge.com serves as a personal portfolio, showcasing my skills and experience in the field of IT and technology. It is built using HTML, CSS, and JavaScript, with responsive design for various devices. It is also 100% hosted on Microsoft Azure using Static Web Apps and CI/CD runners from GitHub.</p>
+                        <div class="project-links">
+                            <a target="_blank" href="https://github.com/blakeniebrugge/blakeniebruggecom2023/" class="project-link" target="_blank">– View Source Code →</a>
+                            <a href="mailto:blake@blakeniebrugge.com" class="project-link">– Make a Suggestion →</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h3>Deep Learning MLB Team Classifier</h3>
+                        <div class="project-subtitle">CS 387: Deep Learning @ Illinois Wesleyan</div>
+                        <p>Developed a PyTorch-based neural network to identify MLB players' teams based on profile pictures, achieving near 90% testing accuracy. Scraped nearly 1,200 images from team websites for training. Includes a user-friendly interface for uploading images and testing the model.</p>
+                        <div class="project-links">
+                            <a target="_blank" href="https://colab.research.google.com/drive/1bA9Khc5fXruW86U0W3wdGG1g3isl3OO9?usp=sharing" class="project-link" target="_blank">– View Project →</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h3>Home Lab</h3>
+                        <p>Repurposed a Dell OptiPlex 3040 into a Proxmox VE host that currently runs a number of small virtual machines running various tasks such as Twitter bots, a Tailscale server, a Kali machine (with an additional, intentionally vulnerable VM to test against), and a web server.</p>
+                        <div class="project-links">
+                            <a target="_blank" href="https://status.blakeniebrugge.com" class="project-link" target="_blank">– See Status →</a>
+                            <a href="assets/Home Network Map - 11-23-2025.png" class="project-link" target="_blank">– View Network Map →</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h3>Home Lab: Setting Up & Joining Active Directory Domain</h3>
+                        <p>Self-learning experience on my Home Lab environment that included setting up a Windows 2019 Server, configuring a new Active Directory domain, joining that domain with a Windows 10 machine, and then pushing CIS Benchmarks to it via Group Policy.</p>
+                        <div class="project-links">
+                            <a target="_blank" href="assets/HomeLabProject1.pdf" class="project-link" target="_blank">– Read Write-up →</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h3>Home Lab: Re-architecting My Home Network After an ISP Change</h3>
+                        <p>A case study which discusses multiple issues that arose after changing Internet Service Providers, which led to self hosted websites and a VPN server going offline.</p>
+                        <div class="project-links">
+                            <a target="_blank" href="assets/Homelab-ISPChange.pdf" class="project-link" target="_blank">– Read Write-up →</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h3>SSH Honeypot</h3>
+                        <p>A Cowrie honeypot that is hosted in Microsoft Azure, which logs SSH Connections, Login Attempts, and Commands that were ran. It enhances the logs with geo-location data and ships them to a Grafana Cloud instance, which displays a dashboard using this real-time data.</p>
+                        <p>Feel free to try it yourself: <code>ssh 20.33.8.126</code></p>
+                        <div class="project-links">
+                            <a target="_blank" href="https://honeypot.blakeniebrugge.com" class="project-link" target="_blank">– Go to Dashboard →</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
 
-        <!-- Header (stays put) -->
-        <div class="header">
-            <div class="header-info">
-                <div class="title">Security Analyst</div>
-                <div class="company">Midland States Bank</div>
-            </div>
-            <div class="contact-info">
-                <span>St. Louis, Missouri</span>
-                <a href="mailto:blake@blakeniebrugge.com">blake@blakeniebrugge.com</a>
-                <a href="https://blakeniebrugge.com">blakeniebrugge.com</a>
-            </div>
-        </div>
+        <script>
+            const readMore = document.getElementById('read-more');
+            const readLess = document.getElementById('read-less');
+            const shortContent = document.querySelector('.short-content');
+            const fullContent = document.getElementById('full-content');
+            const profileContainer = document.querySelector('.profile-name-container');
+            const profileImg = profileContainer.querySelector('img');
+            const profileName = profileContainer.querySelector('h1');
+            const subtitle = profileContainer.querySelector('.subtitle');
 
-        <!-- About -->
-        <section class="section">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="short-content">
-                    <p>I'm a security professional with experience across security platforms, incident investigation, cloud infrastructure, and automation. In my current role, I work on integrating security technologies, improving security visibility, investigating suspicious activity, and building automated workflows. I'm particularly interested in the engineering side of cybersecurity, including network security, cloud security, and infrastructure.</p>
-                    <span class="read-more" id="read-more">Read More →</span>
-                </div>
-                <div class="full-content" id="full-content">
-                    <p>I'm a security professional with experience across security platforms, incident investigation, cloud infrastructure, and automation. In my current role, I work on integrating security technologies, improving security visibility, investigating suspicious activity, and building automated workflows. I'm particularly interested in the engineering side of cybersecurity, including network security, cloud security, and infrastructure.</p>
-                    <p>Outside of work, I enjoy building and experimenting with technology. My homelab gives me a place to get hands-on with virtualization, Linux, networking, and security projects beyond my day-to-day responsibilities. I also enjoy scripting and finding practical ways to make systems more efficient and secure.</p>
-                    <p>When I'm not working on something technical, you'll probably find me watching hockey, baseball, or football, or out on a golf course trying to get better. I'm also a computer science graduate, and building this website has been another opportunity to put those skills to use.</p>
-                    <p>I'm always interested in connecting with people who enjoy technology, solving difficult problems, and building things that work well. Feel free to reach out!</p>
-                    <p>- Blake</p>
-                    <span class="read-more" id="read-less">Read Less ←</span>
-                </div>
-            </div>
-        </section>
+            readMore?.addEventListener('click', () => {
+            shortContent.style.display = 'none';
+            fullContent.style.display = 'block';
+            });
 
-        <!-- Experience -->
-        <section class="section">
-            <h2 class="section-title">Professional Experience</h2>
-            <div class="timeline-scroll">
-                <div class="timeline-track">
-                    <div class="timeline-item">
-                        <h3>InfoSec Analyst</h3>
-                        <div class="company">Midland States Bank</div>
-                        <div class="dates">December 2023 - Present</div>
-                        <div class="location">Remote</div>
-                    </div>
-                    <div class="timeline-item">
-                        <h3>IT Cloud Analyst</h3>
-                        <div class="company">COUNTRY Financial®</div>
-                        <div class="dates">June 2023 - December 2023</div>
-                        <div class="location">Bloomington, IL</div>
-                    </div>
-                    <div class="timeline-item">
-                        <h3>InfoSec Intern</h3>
-                        <div class="company">Midland States Bank</div>
-                        <div class="dates">June 2022 - December 2022</div>
-                        <div class="location">Effingham, IL</div>
-                    </div>
-                </div>
-            </div>
-        </section>
+            readLess?.addEventListener('click', () => {
+            shortContent.style.display = 'block';
+            fullContent.style.display = 'none';
+            });
 
-        <!-- Education -->
-        <section class="section">
-            <h2 class="section-title">Education</h2>
-            <div class="education-grid">
-                <div class="education-item">
-                    <h3>Illinois Wesleyan University</h3>
-                    <div class="location">Bloomington, IL | 2019-2023</div>
-                    <div class="degree">Bachelor's of Science, Computer Science</div>
-                    <ul>
-                        <li>NCAA Baseball | 2019-2023</li>
-                        <li>Theta Chi Fraternity | 2019-2023
-                            <ul style="list-style-type: none; padding-left: 1em;">
-                                President<br>
-                                House Manager<br>
-                                Chair of Alumni Relations
-                            </ul>
-                        </li>
-                        <li>Interfraternity Council | 2022
-                            <ul style="list-style-type: none; padding-left: 1em;">
-                                VP Finance & Communication
-                            </ul>
-                    </ul>
-                </div>
-                <div class="education-item">
-                    <h3>St. Anthony High School</h3>
-                    <div class="location">Effingham, IL | 2015-2019</div>
-                    <div class="degree">High School Diploma</div>
-                </div>
-            </div>
-        </section>
+            const scrollRoot = document.getElementById('scroll-root');
 
-        <!-- Certifications -->
-        <section class="section">
-            <h2 class="section-title">Certifications</h2>
-            <div class="cert-grid">
-                <div class="cert-card">
-                    <img src="assets/63188c97fbd0a646ced923da_microsoft-azure-fundamentals-official-training-certification.png" alt="Azure Fundamentals">
-                    <h4>AZ-900</h4>
-                    <p>Microsoft Azure Fundamentals</p>
-                    <p>ID: D84F176AAA932B0B</p>
-                    <a target="_blank" href="https://learn.microsoft.com/api/credentials/share/en-us/BlakeNiebrugge/D84F176AAA932B0B?sharingId=E7D99C818E2A2A9F">– View Credential →</a>
-                </div>
-                <div class="cert-card">
-                    <img src="assets/NetworkPlus.png" alt="Network+">
-                    <h4>Network+</h4>
-                    <p>CompTIA Network+</p>
-                    <p>ID: FN3NBQNQ5B111PK2</p>
-                    <a target="_blank" href="https://www.credly.com/badges/550df3c0-2bbb-4c03-800e-f3b260b365d1/public_url">– View Credential →</a>
-                </div>
-                <div class="cert-card">
-                    <img src="assets/SecurityPlus.png" alt="Security+">
-                    <h4>Security+</h4>
-                    <p>CompTIA Security+</p>
-                    <p>ID: 26E0ZP7QV2EQ2G62</p>
-                    <a target="_blank" href="https://www.credly.com/badges/dd5e0655-f220-4a06-ae7a-663ef98db3d5/public_url">– View Credential →</a>
-                </div>
-                <div class="cert-card in-progress">
-                    <img src="assets/PenTestPlus.png" alt="PenTest+">
-                    <h4>PentTest+</h4>
-                    <p>CompTIA PenTest+</p>
-                </div>
-            </div>
-        </section>
+            scrollRoot.addEventListener('scroll', () => {
+            const scrollTop = scrollRoot.scrollTop;
+            const fadeStart = 0;
+            const fadeEnd = 200; // distance over which animation happens
+            const progress = Math.min(Math.max((scrollTop - fadeStart) / (fadeEnd - fadeStart), 0), 1);
 
-        <!-- Skills -->
-        <section class="section">
-            <h2 class="section-title">Skills</h2>
-            <div class="skills-category">
-                <h3>Technical Experiences</h3>
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <div class="skill-title">Security Platforms</div>
-                        <p>Microsoft Defender</p>
-                        <p>Arctic Wolf</p>
-                        <p>Rapid7</p>
-                        <p>Abnormal AI</p>
-                        <p>Microsoft Purview</p>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-title">Cloud</div>
-                        <p>Microsoft Azure</p>
-                        <p>Entra ID & Active Directory</p>
-                        <p>Microsoft 365</p>
-                        <p>Intune</p>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-title">Networking</div>
-                        <p>TCP/IP & Subnetting</p>
-                        <p>DNS & DHCP</p>
-                        <p>VPNs & Network Segmentation</p>
-                        <p>Cisco Umbrella</p>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-title">Systems</div>
-                        <p>Windows</p>
-                        <p>Ubuntu Linux</p>
-                        <p>Kali Linux</p>
-                        <p>Proxmox VE</p>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-title">Automation</div>
-                        <p>PowerShell</p>
-                        <p>Python</p>
-                        <p>API Integrations</p>
-                        <p>Azure CLI</p>
-                        <p>Ansible</p>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-title">Security Testing</div>
-                        <p>Nmap</p>
-                        <p>Burp Suite</p>
-                        <p>Metasploit</p>
-                        <p>Kali Linux</p>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-title">Analysis</div>
-                        <p>Security Investigations</p>
-                        <p>Log Analysis</p>
-                        <p>Kusto Query Language (KQL)</p>
-                        <p>Grafana & Alloy</p>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-title">Development</div>
-                        <p>HTML & CSS</p>
-                        <p>JavaScript</p>
-                        <p>SQL</p>
-                        <p>Java</p>
-                        <p>C++</p>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-title">Governance</div>
-                        <p>SOX IT General Controls</p>
-                        <p>COBIT</p>
-                        <p>Security Control Testing</p>
-                        <p>Audit Support</p>
-                    </div>
-                </div>
-            <div class="skills-category">
-                <h3>Soft Skills</h3>
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <div class="skill-title">Time Management</div>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-title">Collaboration</div>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-title">Organization</div>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-title">Teamwork</div>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-title">Adaptability</div>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-title">Problem-Solving</div>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-title">Critical Thinking</div>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-title">Attention to Detail</div>
-                    </div>
-                </div>
-            </div>
-        </section>
+            // fade in bottom border
+            profileContainer.style.borderBottom = `${progress}px solid rgba(255,255,255,0.1)`;
 
-        <!-- Projects -->
-        <section class="section">
-            <h2 class="section-title">Portfolio / Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>This Website</h3>
-                    <p>blakeniebrugge.com serves as a personal portfolio, showcasing my skills and experience in the field of IT and technology. It is built using HTML, CSS, and JavaScript, with responsive design for various devices. It is also 100% hosted on Microsoft Azure using Static Web Apps and CI/CD runners from GitHub.</p>
-                    <div class="project-links">
-                        <a target="_blank" href="https://github.com/blakeniebrugge/blakeniebruggecom2023/" class="project-link" target="_blank">– View Source Code →</a>
-                        <a href="mailto:blake@blakeniebrugge.com" class="project-link">– Make a Suggestion →</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <h3>Deep Learning MLB Team Classifier</h3>
-                    <div class="project-subtitle">CS 387: Deep Learning @ Illinois Wesleyan</div>
-                    <p>Developed a PyTorch-based neural network to identify MLB players' teams based on profile pictures, achieving near 90% testing accuracy. Scraped nearly 1,200 images from team websites for training. Includes a user-friendly interface for uploading images and testing the model.</p>
-                    <div class="project-links">
-                        <a target="_blank" href="https://colab.research.google.com/drive/1bA9Khc5fXruW86U0W3wdGG1g3isl3OO9?usp=sharing" class="project-link" target="_blank">– View Project →</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <h3>Home Lab</h3>
-                    <p>Repurposed a Dell OptiPlex 3040 into a Proxmox VE host that currently runs a number of small virtual machines running various tasks such as Twitter bots, a Tailscale server, a Kali machine (with an additional, intentionally vulnerable VM to test against), and a web server.</p>
-                    <div class="project-links">
-                        <a target="_blank" href="https://status.blakeniebrugge.com" class="project-link" target="_blank">– See Status →</a>
-                        <a href="assets/Home Network Map - 11-23-2025.png" class="project-link" target="_blank">– View Network Map →</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <h3>Home Lab: Setting Up & Joining Active Directory Domain</h3>
-                    <p>Self-learning experience on my Home Lab environment that included setting up a Windows 2019 Server, configuring a new Active Directory domain, joining that domain with a Windows 10 machine, and then pushing CIS Benchmarks to it via Group Policy.</p>
-                    <div class="project-links">
-                        <a target="_blank" href="assets/HomeLabProject1.pdf" class="project-link" target="_blank">– Read Write-up →</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <h3>Home Lab: Re-architecting My Home Network After an ISP Change</h3>
-                    <p>A case study which discusses multiple issues that arose after changing Internet Service Providers, which led to self hosted websites and a VPN server going offline.</p>
-                    <div class="project-links">
-                        <a target="_blank" href="assets/Homelab-ISPChange.pdf" class="project-link" target="_blank">– Read Write-up →</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <h3>SSH Honeypot</h3>
-                    <p>A Cowrie honeypot that is hosted in Microsoft Azure, which logs SSH Connections, Login Attempts, and Commands that were ran. It enhances the logs with geo-location data and ships them to a Grafana Cloud instance, which displays a dashboard using this real-time data.</p>
-                    <p>Feel free to try it yourself: <code>ssh 20.33.8.126</code></p>
-                    <div class="project-links">
-                        <a target="_blank" href="https://honeypot.blakeniebrugge.com" class="project-link" target="_blank">– Go to Dashboard →</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+            // Interpolated transforms
+            const imgTranslate = -progress * 10;   // move left
+            const nameTranslate = -progress * 70;   // move left slightly
+
+            profileImg.style.transform = `translateX(${imgTranslate}px) scale(${1 - progress * 0.5})`;
+            profileName.style.transform = `translateX(${nameTranslate}px) scale(${1 - progress * 0.3})`;
+
+            // Fade in subtitle as we scroll
+            subtitle.style.opacity = progress;
+            subtitle.style.transform = `translateX(${-progress * 35}px) translateY(${10 - progress * 20}px)`;
+            });
+        </script>
     </div>
-
-    <script>
-        const readMore = document.getElementById('read-more');
-        const readLess = document.getElementById('read-less');
-        const shortContent = document.querySelector('.short-content');
-        const fullContent = document.getElementById('full-content');
-        const profileContainer = document.querySelector('.profile-name-container');
-        const profileImg = profileContainer.querySelector('img');
-        const profileName = profileContainer.querySelector('h1');
-        const subtitle = profileContainer.querySelector('.subtitle');
-
-        readMore?.addEventListener('click', () => {
-        shortContent.style.display = 'none';
-        fullContent.style.display = 'block';
-        });
-
-        readLess?.addEventListener('click', () => {
-        shortContent.style.display = 'block';
-        fullContent.style.display = 'none';
-        });
-
-        window.addEventListener('scroll', () => {
-        const scrollTop = window.scrollY;
-        const fadeStart = 0;
-        const fadeEnd = 200; // distance over which animation happens
-        const progress = Math.min(Math.max((scrollTop - fadeStart) / (fadeEnd - fadeStart), 0), 1);
-
-        // fade in bottom border
-        profileContainer.style.borderBottom = `${progress}px solid rgba(255,255,255,0.1)`;
-
-        // Interpolated transforms
-        const imgTranslate = -progress * 10;   // move left
-        const nameTranslate = -progress * 70;   // move left slightly
-
-        profileImg.style.transform = `translateX(${imgTranslate}px) scale(${1 - progress * 0.5})`;
-        profileName.style.transform = `translateX(${nameTranslate}px) scale(${1 - progress * 0.3})`;
-
-        // Fade in subtitle as we scroll
-        subtitle.style.opacity = progress;
-        subtitle.style.transform = `translateX(${-progress * 35}px) translateY(${10 - progress * 20}px)`;
-        });
-    </script>
 </body>
 </html>
