@@ -260,6 +260,7 @@ body {
 
     .name .domain {
         margin-left: -0.65rem;
+        padding-bottom: 0.15em;
     }
 
     .links-container {
