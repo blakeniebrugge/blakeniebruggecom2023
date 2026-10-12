@@ -43,13 +43,6 @@ body {
     position: relative;
 }
 
-.name .domain {
-    font-size: 0.25em;
-    opacity: 0.2;
-    margin-left: -1em;
-    font-weight: 200;
-}
-
 .name span:nth-child(1) {
     animation-delay: 0.2s;
 }
@@ -66,8 +59,9 @@ body {
     font-size: 0.15em;
     opacity: 0.15;
     font-weight: 200;
-    letter-spacing: 0.3em;
-    padding-bottom: 0.2em;
+    letter-spacing: 0.1rem;
+    margin-left: -2rem;
+    padding-bottom: 0.15em;
 }
 
 @keyframes fadeInUp {
@@ -262,6 +256,10 @@ body {
         margin-left: 4vw;
     }
 
+    .name .domain {
+        margin-left: -0.65rem;
+    }
+
     .links-container {
         gap: 2rem;
         margin-top: 3rem;
@@ -272,19 +270,19 @@ body {
     }
 
     .social-grid {
-        bottom: 2rem;
+        bottom: 3rem;
         right: 2rem;
         gap: 1.5rem;
     }
 
     .email {
-        bottom: 2rem;
-        left: 2rem;
-        font-size: 0.75rem;
+        bottom: 3rem;
+        left: 1.5rem;
+        font-size: 0.65rem;
     }
 
     .resume-link {
-        top: 2rem;
+        top: 3.5rem;
         right: 2rem;
         font-size: 0.9rem;
     }

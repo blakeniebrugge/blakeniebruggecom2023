@@ -220,56 +220,90 @@ body {
 }
 
 /* ──────────── EXPERIENCE ──────────── */
-.timeline {
-    position: relative;
-    padding-left: 5rem;
+.timeline-scroll {
+    width: 100%;
+    overflow-x: auto;
+    padding: 1.5rem 0 1rem;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255,255,255,0.25) transparent;
 }
 
-.timeline::before {
+.timeline-track {
+    position: relative;
+    display: flex;
+    gap: 1.5rem;
+    width: max-content;
+    padding: 0.875rem 5rem 1rem 4.5rem;
+}
+
+.timeline-track::before {
     content: '';
     position: absolute;
-    left: 2rem ;
-    top: 1rem;
-    bottom: -2rem;
-    width: 2px;
-    background: rgba(255, 255, 255, 0.1);
+    top: 0;
+    left: 0rem;
+    right: -10rem;
+    height: 2px;
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.15) 0%,
+        rgba(255, 255, 255, 0.15) 65%,
+        rgba(255, 255, 255, 0) 100%
+    );
+}
+
+/* Present-day marker on desktop */
+.timeline-track::after {
+    content: 'PRESENT';
+    position: absolute;
+    top: -1rem;
+    left: 0rem;
+    color: rgba(255, 255, 255, 0.562);;
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    white-space: nowrap;
 }
 
 .timeline-item {
     position: relative;
-    margin-bottom: 3rem;
+    flex: 0 0 240px;
+    padding-top: 0.75rem;
 }
 
 .timeline-item::before {
     content: '';
     position: absolute;
-    left: -3.425rem;
-    top: 0.55rem;
-    width: 16px;
-    height: 16px;
+    top: -1.25rem;
+    left: 0;
+    width: 14px;
+    height: 14px;
     border-radius: 50%;
     background: #eb6f09;
     box-shadow: 0 0 0 4px #0a0a0a;
 }
 
-.timeline-item:nth-child(2)::before { background: #2a5e00; }
-.timeline-item:nth-child(3)::before { background: #eb6f09; }
-.timeline-item:nth-child(4)::before { background: #c50101; }
+.timeline-item:nth-child(2)::before {
+    background: #2a5e00;
+}
+
+.timeline-item:nth-child(3)::before {
+    background: #eb6f09;
+}
 
 .timeline-item h3 {
-    font-size: 1.3rem;
+    font-size: 1.15rem;
     font-weight: 400;
-    margin-bottom: 0.25rem;
+    margin: 0 0 0.5rem;
 }
 
 .timeline-item .company {
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.7);
     margin-bottom: 0.5rem;
 }
 
 .timeline-item .dates,
 .timeline-item .location {
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.45);
     font-size: 0.85rem;
     font-style: italic;
 }
