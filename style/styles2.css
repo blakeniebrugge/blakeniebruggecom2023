@@ -243,25 +243,6 @@ body {
     color: rgba(255, 255, 255, 0.9);
 }
 
-/* Prevent iOS Safari from scrolling the document itself */
-html,
-body {
-    height: 100%;
-    overflow: hidden;
-    background: #0a0a0a;
-}
-
-/* Make the inner container the scrolling area */
-#scroll-root {
-    height: 100vh;
-    height: 100dvh;
-    overflow-y: auto;
-    overflow-x: clip;
-    -webkit-overflow-scrolling: touch;
-    overscroll-behavior-y: none;
-    background: #0a0a0a;
-}
-
 
 @media (max-width: 768px) {
     .hero {
